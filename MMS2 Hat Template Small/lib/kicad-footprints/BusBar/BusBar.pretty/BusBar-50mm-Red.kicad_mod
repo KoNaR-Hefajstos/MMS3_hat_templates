@@ -1,0 +1,167 @@
+(footprint "BusBar-50mm-Red"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "BUS BAR"
+		(at 29 -3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "5041e005-5c98-4048-acb4-24bf470e964a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "BusBar-50mm-Red"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0b96221e-d850-4f52-87e2-d374b3404f8b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "480f93b8-9873-42fc-ac33-253f88bf84b8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8e782b51-8f17-4f65-9aa8-742156d9b859")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 49.5 -5)
+		(end 7.5 -5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "91413ba9-3aa7-4977-89eb-ec025c6e5f94")
+	)
+	(fp_line
+		(start 49.5 -1)
+		(end 7.5 -1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "10a2b9dc-5c84-402e-abc6-3eef0df28f72")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "408c912b-167d-4b85-b21e-0f43e7849fea")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 28.5 -0.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "63196069-65be-46ef-ba96-121b12e4238e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(dimension
+		(type orthogonal)
+		(layer "User.1")
+		(uuid "b58ff10b-bbc3-48f3-ade5-52b6ab5c99aa")
+		(pts
+			(xy 6 -3) (xy 51 -3)
+		)
+		(height -7)
+		(orientation 0)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 3)
+			(units_format 0)
+			(precision 4)
+			(suppress_zeroes yes)
+		)
+		(style
+			(thickness 0.1)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0.5)
+			(keep_text_aligned yes)
+		)
+		(gr_text "45"
+			(at 28.5 -11.15 0)
+			(layer "User.1")
+			(uuid "b58ff10b-bbc3-48f3-ade5-52b6ab5c99aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 3.5 -3)
+		(size 5 5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "62ff4625-81f1-4e96-8a89-1bd1e978d923")
+	)
+	(pad "2" smd roundrect
+		(at 53.5 -3)
+		(size 5 5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "21c38c43-8bf1-44cc-9739-c7069d5d0ed1")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/lib/kicad-3d-models/BusBar-Red.step"
+		(offset
+			(xyz 1 0.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
