@@ -23,11 +23,11 @@
 
 <p> Jeśli twoja płytka potrzebuje więcej mocy niż ile ChainBus daje, to można dodatkowo podłączyć Vin po XT60 która obsługuje około 60A.
 
-<p> Jeśli potrzebujesz innych napięć to możesz użyć gotowej przetwonicy step-down z template'a. Można wybierać z niej  24V, 12V, 9V i 6V2. Wszystkie na 2A.
+<p> Jeśli potrzebujesz innych napięć to możesz użyć gotowej przetwonicy step-down z template'a. Można wybierać z niej 24V, 12V, 9V i 6V2. Wszystkie na 2A.
 
 
 ### Łączenie hat'ów
-<p> Na jednym MMS3 można zamontować do 8 hatów. Łączy się przez wpinianie kolejnego MMS'a do złącza ChainBus wcześniejszego
+<p> Na jednym MMS3 można zamontować do 8 hatów. Łączy się przez wpinianie kolejnego Hat'a do złącza ChainBus wcześniejszego
 
 ### Przykładowy hat
 [Sterownik silników krokowych. Komunikacja po SPI](https://github.com/KoNaR-Hefajstos/MMS3_hat_stepper_controler)
