@@ -1,7 +1,5 @@
 # Zestaw template'ów kompatybilnych z płytką MMS3 i systemem ChainBus
 
-## Nie ma jeszcze standardu fizycznego płytki (czyli jeszcze nie musisz robić layout'u ) <p> Zostanie on dodany w późniejszym terminie (po sesji). Template schematic'owy jest już dostępny <p> Wymiary hat'a to około 100x50mm
-
 ### Łączenie hat'ów
 <p> Na jednym MMS3 można zamontować do 8 hatów. Łączy się przez wpinianie kolejnego Hat'a do złącza ChainBus wcześniejszego
 
@@ -21,7 +19,7 @@
 | 12V stby |      12V      |          0.5A          |                   65mA |
 | BRD_VIN  | Od 12V do 48V |          1.5A          |                  185mA |
 
-<p> Prąd dla jednego hat'a został policzony w wypadku kiedy wszystkie 8 hat'ów zostało zamontowane. Jeśli na jeden MMS zamontujesz mniej hat'ów to każdy może pociągnąć więcej prądu.
+<p> Prąd dla jednego hat'a został policzony w wypadku kiedy wszystkie 8 hat'ów jest zamontowanych. Jeśli na jeden MMS zamontujesz mniej hat'ów to każdy może pociągnąć więcej prądu.
 
 <p> Hat'y powinny obsługiwać do 48V z BRD_VIN. Komponenty powinny być dostosowane aż do tego napięcia.
 
@@ -29,6 +27,9 @@
 
 <p> Jeśli potrzebujesz innych napięć to możesz użyć gotowej przetwonicy step-down z template'a. Można wybierać z niej 24V, 12V, 9V i 6V2. Wszystkie na 2A.
 
+### Template Mechaniczny
+<p> Nie możesz zmieniać wielkości PCB oraz rozstawienia otworów montażowych żeby płytka była kompatybilna z ChainBus'em
+<p> Jeśli potrzebne będą w twoim projekcie, to na płytce zostały rozstawione  złącza XT60 oraz konwerter step down. Te elementy nie zostały jeszcze przetestowane w złożonym układzie. <p>Jeśli twój projekt ich nie potrzebuje to możesz je na spokojnie usunąć.
 
 ### Przykładowy hat
 [Sterownik silników krokowych. Komunikacja po SPI](https://github.com/KoNaR-Hefajstos/MMS3_hat_stepper_controler)

@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "MMS3 Hat template small (Change Me)")
-		(date "2026-01-28")
+		(date "2026-02-12")
 		(rev "A")
 		(company "Moducard System")
 		(comment 1 "Wojciech Szafrański")
@@ -245,6 +245,89 @@
 					)
 					(fill
 						(type outline)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -612,22 +695,8 @@
 		(uuid "1294e8cc-6db1-48df-b2b9-522db6cbe0fa")
 	)
 	(no_connect
-		(at 34.29 180.34)
-		(uuid "33cd084c-dfb1-4678-b56f-216d3482a1f8")
-	)
-	(no_connect
 		(at 96.52 80.01)
 		(uuid "f8d585f9-12e9-4f7d-a509-04e032f8bccf")
-	)
-	(wire
-		(pts
-			(xy 19.05 180.34) (xy 19.05 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21585cf4-5972-4ca4-ac01-a4cfa8b81c8e")
 	)
 	(bus
 		(pts
@@ -658,6 +727,16 @@
 			(type default)
 		)
 		(uuid "45dfbeab-2998-45b7-9b70-34ea634042c1")
+	)
+	(wire
+		(pts
+			(xy 24.13 176.53) (xy 24.13 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57e76bdc-cb2f-4d39-bfd4-46dd6fc362c7")
 	)
 	(wire
 		(pts
@@ -12911,7 +12990,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Manufacturing:Tooling Hole, PCM_JLCPCB, 1.152mm")
-		(at 114.3 171.45 0)
+		(at 140.97 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12919,8 +12998,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "048316d6-a057-4ba2-83ef-068bb9533692")
-		(property "Reference" "H3"
-			(at 115.57 170.8149 0)
+		(property "Reference" "H7"
+			(at 142.24 168.2749 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12929,7 +13008,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 115.57 172.72 0)
+			(at 142.24 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12938,7 +13017,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:Hole_Tooling_JLCPCB"
-			(at 114.3 171.45 0)
+			(at 140.97 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12947,7 +13026,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order"
-			(at 114.3 171.45 0)
+			(at 140.97 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12956,7 +13035,16 @@
 			)
 		)
 		(property "Description" "1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical. 2. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion. 3. Tooling holes are only required for PCB assembly orders. 4. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area."
-			(at 114.3 171.45 0)
+			(at 140.97 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 140.97 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12965,9 +13053,9 @@
 			)
 		)
 		(instances
-			(project "MMS2_hat_template_small"
+			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "H3")
+					(reference "H7")
 					(unit 1)
 				)
 			)
@@ -12975,7 +13063,7 @@
 	)
 	(symbol
 		(lib_id "Graphic:SYM_Flash_Large")
-		(at 135.89 181.61 0)
+		(at 162.56 179.07 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -12984,7 +13072,7 @@
 		(fields_autoplaced yes)
 		(uuid "09da0137-3824-439e-854d-ddec931d6a32")
 		(property "Reference" "#SYM2"
-			(at 132.08 181.61 90)
+			(at 158.75 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12993,7 +13081,7 @@
 			)
 		)
 		(property "Value" "SYM_Flash_Large"
-			(at 139.192 181.61 90)
+			(at 165.862 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13002,7 +13090,7 @@
 			)
 		)
 		(property "Footprint" "QRcode:QR"
-			(at 135.636 183.896 0)
+			(at 162.306 181.356 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13011,7 +13099,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 184.15 0)
+			(at 172.72 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13020,7 +13108,7 @@
 			)
 		)
 		(property "Description" "Flash symbol, large"
-			(at 135.89 181.61 0)
+			(at 162.56 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13029,7 +13117,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
 					(reference "#SYM2")
 					(unit 1)
@@ -13038,17 +13126,17 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Manufacturing:Tooling Hole, PCM_JLCPCB, 1.152mm")
-		(at 123.19 171.45 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 43.18 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7270eaa3-20e4-4c0f-ace2-dafd79c81abc")
-		(property "Reference" "H4"
-			(at 124.46 170.8149 0)
+		(uuid "3c0d1340-32b8-40ed-a067-5f7a90eb3ce7")
+		(property "Reference" "H2"
+			(at 45.72 167.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13056,8 +13144,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 124.46 172.72 0)
+		(property "Value" "M2.5 mount"
+			(at 45.72 170.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13065,8 +13153,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Hole_Tooling_JLCPCB"
-			(at 123.19 171.45 0)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
+			(at 43.18 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13074,8 +13162,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order"
-			(at 123.19 171.45 0)
+		(property "Datasheet" "~"
+			(at 43.18 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13083,8 +13171,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical. 2. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion. 3. Tooling holes are only required for PCB assembly orders. 4. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area."
-			(at 123.19 171.45 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 43.18 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13093,9 +13181,146 @@
 			)
 		)
 		(instances
-			(project "MMS2_hat_template_small"
+			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "H4")
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Manufacturing:Tooling Hole, PCM_JLCPCB, 1.152mm")
+		(at 149.86 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7270eaa3-20e4-4c0f-ace2-dafd79c81abc")
+		(property "Reference" "H8"
+			(at 151.13 168.2749 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 151.13 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:Hole_Tooling_JLCPCB"
+			(at 149.86 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order"
+			(at 149.86 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical. 2. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion. 3. Tooling holes are only required for PCB assembly orders. 4. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area."
+			(at 149.86 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 149.86 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(reference "H8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 43.18 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "897b36dc-5e00-4781-9695-f9572ec770d3")
+		(property "Reference" "H3"
+			(at 45.72 172.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M2.5 mount"
+			(at 45.72 175.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
+			(at 43.18 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 43.18 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -13103,7 +13328,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 19.05 184.15 0)
+		(at 24.13 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13112,7 +13337,7 @@
 		(fields_autoplaced yes)
 		(uuid "8c8242a2-17e4-48b5-8859-af503984483a")
 		(property "Reference" "#PWR01"
-			(at 19.05 190.5 0)
+			(at 24.13 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13121,7 +13346,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 19.05 189.23 0)
+			(at 24.13 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13129,7 +13354,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 19.05 184.15 0)
+			(at 24.13 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13138,7 +13363,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 184.15 0)
+			(at 24.13 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13147,7 +13372,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 19.05 184.15 0)
+			(at 24.13 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13159,7 +13384,7 @@
 			(uuid "8c65b865-3429-407b-a95b-46765ea93f5d")
 		)
 		(instances
-			(project "MMS2"
+			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
 					(reference "#PWR01")
 					(unit 1)
@@ -13169,7 +13394,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Manufacturing:Tooling Hole, PCM_JLCPCB, 1.152mm")
-		(at 123.19 176.53 0)
+		(at 149.86 173.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13177,8 +13402,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9671361b-3b51-4845-94d6-a4d8cdb90b14")
-		(property "Reference" "H5"
-			(at 124.46 175.8949 0)
+		(property "Reference" "H9"
+			(at 151.13 173.3549 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13187,7 +13412,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 124.46 177.8 0)
+			(at 151.13 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13196,7 +13421,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:Hole_Tooling_JLCPCB"
-			(at 123.19 176.53 0)
+			(at 149.86 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13205,7 +13430,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order"
-			(at 123.19 176.53 0)
+			(at 149.86 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13214,7 +13439,16 @@
 			)
 		)
 		(property "Description" "1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical. 2. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion. 3. Tooling holes are only required for PCB assembly orders. 4. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area."
-			(at 123.19 176.53 0)
+			(at 149.86 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 149.86 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13223,9 +13457,9 @@
 			)
 		)
 		(instances
-			(project "MMS2_hat_template_small"
+			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "H5")
+					(reference "H9")
 					(unit 1)
 				)
 			)
@@ -13233,7 +13467,7 @@
 	)
 	(symbol
 		(lib_id "Graphic:SYM_ESD_Small")
-		(at 135.89 172.72 0)
+		(at 162.56 170.18 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -13242,7 +13476,7 @@
 		(fields_autoplaced yes)
 		(uuid "af79b0d8-d47d-404a-9c7c-94842ef6a7fa")
 		(property "Reference" "#SYM1"
-			(at 135.89 169.164 0)
+			(at 162.56 166.624 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13251,7 +13485,7 @@
 			)
 		)
 		(property "Value" "SYM_ESD_Small"
-			(at 135.89 175.895 0)
+			(at 162.56 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13260,7 +13494,7 @@
 			)
 		)
 		(property "Footprint" "Symbol:ESD-Logo_6.6x6mm_SilkScreen"
-			(at 135.89 172.466 0)
+			(at 162.56 169.926 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13269,7 +13503,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 172.466 0)
+			(at 162.56 169.926 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13278,7 +13512,7 @@
 			)
 		)
 		(property "Description" "ESD warning/\"Do not touch\" symbol, small"
-			(at 135.89 172.72 0)
+			(at 162.56 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13287,7 +13521,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
 					(reference "#SYM1")
 					(unit 1)
@@ -13296,17 +13530,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 34.29 177.8 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 43.18 179.07 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bf5c37a1-28be-44a2-a2e9-7d1337a07309")
-		(property "Reference" "H2"
-			(at 36.83 175.26 0)
+		(uuid "bacc9794-7325-4356-adf3-87765f583942")
+		(property "Reference" "H4"
+			(at 45.72 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13314,8 +13548,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "M3 mount"
-			(at 36.83 177.8 0)
+		(property "Value" "M2.5 mount"
+			(at 45.72 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13323,8 +13557,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 34.29 177.8 0)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
+			(at 43.18 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13333,7 +13567,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 34.29 177.8 0)
+			(at 43.18 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13341,22 +13575,19 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
-			(at 34.29 177.8 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 43.18 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "63319e1a-214b-4bbe-9165-70b4e60c74d2")
 		)
 		(instances
-			(project "MMS2"
+			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "H2")
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -13364,7 +13595,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 19.05 177.8 0)
+		(at 24.13 173.99 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -13373,7 +13604,7 @@
 		(fields_autoplaced yes)
 		(uuid "c8ce61d0-35b4-429d-8aa1-236fd73ec981")
 		(property "Reference" "H1"
-			(at 21.59 175.26 0)
+			(at 26.67 171.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13381,8 +13612,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "M3 mount"
-			(at 21.59 177.8 0)
+		(property "Value" "M2.5 Mount"
+			(at 26.67 173.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13390,8 +13621,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 19.05 177.8 0)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad_TopOnly"
+			(at 24.13 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13400,7 +13631,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 19.05 177.8 0)
+			(at 24.13 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13409,7 +13640,16 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 19.05 177.8 0)
+			(at 24.13 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 24.13 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13421,7 +13661,7 @@
 			(uuid "8500638a-7843-4589-9542-8ab6c8a09aa7")
 		)
 		(instances
-			(project "MMS2"
+			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
 					(reference "H1")
 					(unit 1)
@@ -13430,17 +13670,17 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Manufacturing:Part Number, PCM_JLCPCB, 0.8x0.15mm")
-		(at 114.3 176.53 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 43.18 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "de34573b-05a8-4ee5-87bc-2f2103de0082")
-		(property "Reference" "PN1"
-			(at 115.57 175.8949 0)
+		(uuid "d844f707-7c17-4a2a-89f9-f3ab5a70692a")
+		(property "Reference" "H5"
+			(at 45.72 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13448,8 +13688,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 115.57 177.8 0)
+		(property "Value" "M2.5 mount"
+			(at 45.72 185.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13457,8 +13697,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Part_Num_JLCPCB"
-			(at 114.3 176.53 0)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
+			(at 43.18 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13466,8 +13706,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/help/article/How-to-remove-order-number-from-your-PCB"
-			(at 114.3 176.53 0)
+		(property "Datasheet" "~"
+			(at 43.18 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13475,8 +13715,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "To indicate the location, simply add the text \"JLCJLCJLCJLC\" to the silk layer and select the \"Specify a location\" option when placing your order. Please note that if this option is not chosen, we may not notice that you have added the text.   Note: Use only \"JLCJLCJLCJLC\" without any additional characters. The font size should be larger than 0.8mm in height and 0.15mm in width."
-			(at 114.3 176.53 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 43.18 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13485,9 +13725,146 @@
 			)
 		)
 		(instances
-			(project "MMS2_hat_template_small"
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Manufacturing:Part Number, PCM_JLCPCB, 0.8x0.15mm")
+		(at 140.97 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de34573b-05a8-4ee5-87bc-2f2103de0082")
+		(property "Reference" "PN1"
+			(at 142.24 173.3549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 142.24 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:Part_Num_JLCPCB"
+			(at 140.97 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/help/article/How-to-remove-order-number-from-your-PCB"
+			(at 140.97 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "To indicate the location, simply add the text \"JLCJLCJLCJLC\" to the silk layer and select the \"Specify a location\" option when placing your order. Please note that if this option is not chosen, we may not notice that you have added the text.   Note: Use only \"JLCJLCJLCJLC\" without any additional characters. The font size should be larger than 0.8mm in height and 0.15mm in width."
+			(at 140.97 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 140.97 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
 					(reference "PN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 43.18 189.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e369863d-bba3-4aff-884c-34b02c21a0f8")
+		(property "Reference" "H6"
+			(at 45.72 187.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M2.5 mount"
+			(at 45.72 190.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
+			(at 43.18 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 43.18 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
+					(reference "H6")
 					(unit 1)
 				)
 			)
@@ -13538,7 +13915,7 @@
 			)
 		)
 		(instances
-			(project "MMS3_hat_template_small"
+			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
 					(page "5")
 				)
@@ -13580,7 +13957,7 @@
 			)
 		)
 		(instances
-			(project "MMS3_hat_template_small"
+			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
 					(page "7")
 				)
@@ -13692,7 +14069,7 @@
 			)
 		)
 		(instances
-			(project "MMS3_hat_template_small"
+			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
 					(page "3")
 				)
@@ -13742,7 +14119,7 @@
 			)
 		)
 		(instances
-			(project "MMS3_hat_template_small"
+			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
 					(page "4")
 				)
@@ -13824,7 +14201,7 @@
 			)
 		)
 		(instances
-			(project "MMS3_hat_template_small"
+			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
 					(page "2")
 				)
