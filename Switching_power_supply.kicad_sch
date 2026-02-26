@@ -4,6 +4,14 @@
 	(generator_version "9.0")
 	(uuid "763d04a3-4c1b-4656-85c0-b5b0c77ae051")
 	(paper "A4")
+	(title_block
+		(title "MMS3 Stepper Controler")
+		(date "2026-02-25")
+		(rev "R0")
+		(comment 1 "Made by Wojciech Szafrański")
+		(comment 2 "Designed in poland")
+		(comment 3 "MMS3 Hat based on Chainbus")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
@@ -199,6 +207,113 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3483,7 +3598,7 @@
 	)
 	(text "R2 = R1(Vout/Vref-1)\nR1 = 1kohm 1%\n"
 		(exclude_from_sim no)
-		(at 58.42 53.34 0)
+		(at 82.296 58.928 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3506,7 +3621,7 @@
 	)
 	(text "Uout = 1.23*(1+r2/r1)\n"
 		(exclude_from_sim no)
-		(at 58.674 46.482 0)
+		(at 82.55 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3555,17 +3670,6 @@
 		)
 		(uuid "dd44b4f7-88c1-4768-b119-5fee25b0a144")
 	)
-	(text "DONT CHANGE CONFIGURATION\nWHEN POWERED ON\nOR YOU MIGHT PUT\n24V ON YOUR OUTPUT\nACCIDENTALLY"
-		(exclude_from_sim no)
-		(at 142.494 61.468 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 0 1)
-			)
-		)
-		(uuid "ecb8ac25-98a4-44a3-87be-2d24b936a7f1")
-	)
 	(text "24V default\nmust be connected\nat all times"
 		(exclude_from_sim no)
 		(at 207.264 80.518 0)
@@ -3613,12 +3717,6 @@
 		(uuid "1c921d99-e649-4dea-ab4d-06c59febf71e")
 	)
 	(junction
-		(at 195.58 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2202d153-2f23-487f-86fa-2e81e56c8e45")
-	)
-	(junction
 		(at 228.6 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3635,6 +3733,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4dc6d7f7-8be6-47f8-afad-570263142868")
+	)
+	(junction
+		(at 195.58 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5472823a-2cbe-46b8-b2dc-d71bc9715234")
 	)
 	(junction
 		(at 78.74 106.68)
@@ -3697,6 +3801,12 @@
 		(uuid "9dffe029-d0b7-4deb-836e-6eb2f14b2aac")
 	)
 	(junction
+		(at 259.08 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a04d3d80-5ca9-4de4-a565-21b9f93e1d18")
+	)
+	(junction
 		(at 106.68 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3749,6 +3859,16 @@
 			(type default)
 		)
 		(uuid "01eaba92-21aa-4d83-9bf9-9c01b1a5aa41")
+	)
+	(wire
+		(pts
+			(xy 259.08 111.76) (xy 266.7 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "027f04e5-37ab-423d-bdc9-a54e175b911f")
 	)
 	(wire
 		(pts
@@ -3859,6 +3979,16 @@
 			(type default)
 		)
 		(uuid "18e0215a-502d-40aa-9fc6-48b92b4d1bd0")
+	)
+	(wire
+		(pts
+			(xy 180.34 66.04) (xy 175.26 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1963da76-274b-4bdc-ad9f-e59c511ea8f3")
 	)
 	(wire
 		(pts
@@ -4052,16 +4182,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 66.04) (xy 195.58 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c4f3769-5a70-4aa7-835a-62b812f17fc5")
-	)
-	(wire
-		(pts
 			(xy 195.58 111.76) (xy 200.66 111.76)
 		)
 		(stroke
@@ -4092,7 +4212,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 66.04) (xy 195.58 66.04)
+			(xy 189.23 64.77) (xy 195.58 64.77)
 		)
 		(stroke
 			(width 0)
@@ -4432,7 +4552,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 111.76) (xy 256.54 111.76)
+			(xy 250.19 111.76) (xy 259.08 111.76)
 		)
 		(stroke
 			(width 0)
@@ -4512,7 +4632,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 58.42) (xy 195.58 66.04)
+			(xy 195.58 58.42) (xy 195.58 64.77)
 		)
 		(stroke
 			(width 0)
@@ -4539,6 +4659,16 @@
 			(type default)
 		)
 		(uuid "ccec7a41-2ecf-44f0-b14c-c0162f58138f")
+	)
+	(wire
+		(pts
+			(xy 195.58 64.77) (xy 195.58 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd0d5ab5-5346-41e6-9682-a561db9c9f1a")
 	)
 	(wire
 		(pts
@@ -4582,7 +4712,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 66.04) (xy 181.61 66.04)
+			(xy 180.34 64.77) (xy 181.61 64.77)
 		)
 		(stroke
 			(width 0)
@@ -4599,6 +4729,16 @@
 			(type default)
 		)
 		(uuid "dbbab9e0-e78e-43b5-9ddb-7357b104d5d6")
+	)
+	(wire
+		(pts
+			(xy 259.08 109.22) (xy 259.08 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e040bcf3-249f-47b4-ae65-5091b57c0cbd")
 	)
 	(wire
 		(pts
@@ -4629,6 +4769,16 @@
 			(type default)
 		)
 		(uuid "e47a3bcf-0fd5-40b7-9dab-d15ac3cd6589")
+	)
+	(wire
+		(pts
+			(xy 180.34 64.77) (xy 180.34 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e697f2f3-8832-4cf1-983d-94d2dcaa2ffe")
 	)
 	(wire
 		(pts
@@ -4751,7 +4901,7 @@
 		(uuid "fbb689cd-2206-4904-913d-e388453baef7")
 	)
 	(image
-		(at 88.9 49.53)
+		(at 112.776 55.118)
 		(scale 0.441642)
 		(uuid "d4ee2b0d-1f3a-4ee5-a7a4-279666d698e8")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAWQAAAD+CAYAAAANkX+xAAAAAXNSR0IArs4c6QAAAARnQU1BAACx"
@@ -5668,7 +5818,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 256.54 111.76 270)
+		(at 266.7 111.76 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5678,7 +5828,7 @@
 		(fields_autoplaced yes)
 		(uuid "1b090056-fda1-484c-ae16-56ec054457ab")
 		(property "Reference" "#PWR090"
-			(at 252.73 111.76 0)
+			(at 262.89 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5687,7 +5837,7 @@
 			)
 		)
 		(property "Value" "U_reg"
-			(at 260.35 111.7599 90)
+			(at 270.51 111.7599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5696,7 +5846,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 256.54 111.76 0)
+			(at 266.7 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5705,7 +5855,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 111.76 0)
+			(at 266.7 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5714,7 +5864,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 256.54 111.76 0)
+			(at 266.7 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8215,6 +8365,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 259.08 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "78409fe1-a4b2-41cf-84ef-7d52fc3fa83b")
+		(property "Reference" "TP8"
+			(at 261.62 104.6479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 261.62 107.1879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 264.16 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 259.08 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "465a425d-0886-441b-9929-8199b55614df")
+		)
+		(instances
+			(project "MMS3_hat_stepper_controler"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/c6fe6645-c1eb-4317-9e6f-134a73c9fa05"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
 		(at 50.8 95.25 270)
 		(unit 1)
@@ -8994,7 +9211,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" " C5368704"
+		(property "LCSC" "C5368704"
 			(at 167.64 111.76 90)
 			(effects
 				(font
@@ -10740,7 +10957,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 185.42 66.04 90)
+		(at 185.42 64.77 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10749,7 +10966,7 @@
 		(fields_autoplaced yes)
 		(uuid "fc4f154b-b7bc-4a9c-bbdd-48a5e898fd52")
 		(property "Reference" "R15"
-			(at 185.42 59.69 90)
+			(at 185.42 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10758,7 +10975,7 @@
 			)
 		)
 		(property "Value" "9.53k"
-			(at 185.42 62.23 90)
+			(at 185.42 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10766,7 +10983,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0402"
-			(at 185.42 67.818 90)
+			(at 185.42 66.548 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10775,7 +10992,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 185.42 66.04 0)
+			(at 185.42 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10784,7 +11001,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 185.42 66.04 0)
+			(at 185.42 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10793,7 +11010,7 @@
 			)
 		)
 		(property "LCSC" "C295883"
-			(at 185.42 66.04 90)
+			(at 185.42 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10802,7 +11019,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 185.42 66.04 90)
+			(at 185.42 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10817,7 +11034,7 @@
 			(uuid "d0a2d2a2-04a2-4539-a89d-782e67f6555c")
 		)
 		(instances
-			(project "MMS2_hat_template_small"
+			(project "MMS3_hat_stepper_controler"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/c6fe6645-c1eb-4317-9e6f-134a73c9fa05"
 					(reference "R15")
 					(unit 1)

@@ -4,6 +4,14 @@
 	(generator_version "9.0")
 	(uuid "8ae4eda8-1dcd-4765-9563-99f70ead8592")
 	(paper "A4")
+	(title_block
+		(title "MMS3 Stepper Controler")
+		(date "2026-02-25")
+		(rev "R0")
+		(comment 1 "Made by Wojciech Szafrański")
+		(comment 2 "Designed in poland")
+		(comment 3 "MMS3 Hat based on Chainbus")
+	)
 	(lib_symbols
 		(symbol "PCM_JLCPCB-Capacitors:0603,100nF"
 			(pin_numbers

@@ -29,7 +29,7 @@
 
 ### Template Mechaniczny
 <p> Nie możesz zmieniać wielkości PCB oraz rozstawienia otworów montażowych żeby płytka była kompatybilna z ChainBus'em
-<p> Jeśli potrzebne będą w twoim projekcie, to na płytce zostały rozstawione  złącza XT60 oraz konwerter step down. Te elementy nie zostały jeszcze przetestowane w złożonym układzie. <p>Jeśli twój projekt ich nie potrzebuje to możesz je na spokojnie usunąć.
+<p> Jeśli potrzebne będą w twoim projekcie, to na płytce zostały rozstawione złącza XT60 oraz konwerter step down. Te elementy nie zostały jeszcze przetestowane w złożonym układzie. <p>Jeśli twój projekt ich nie potrzebuje to możesz je na spokojnie usunąć, tylko jeśli usuwasz XT60 to pamiętaj
 
 ### Przykładowy hat
 [Sterownik silników krokowych. Komunikacja po SPI](https://github.com/KoNaR-Hefajstos/MMS3_hat_stepper_controler)

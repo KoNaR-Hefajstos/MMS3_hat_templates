@@ -5,12 +5,13 @@
 	(uuid "4f2bf8d5-1e5d-468f-b887-f143c723afa4")
 	(paper "A4")
 	(title_block
-		(title "MMS interboard")
-		(date "2026-02-12")
-		(rev "A")
+		(title "MMS3 Stepper Controler")
+		(date "2026-02-25")
+		(rev "R0")
 		(company "Moducard System")
-		(comment 1 "Wojciech Szafrański")
-		(comment 2 "Designed in Poland")
+		(comment 1 "Made by Wojciech Szafrański")
+		(comment 2 "Designed in poland")
+		(comment 3 "MMS3 Hat based on Chainbus")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x16_Odd_Even"
