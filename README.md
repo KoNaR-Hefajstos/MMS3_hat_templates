@@ -35,7 +35,8 @@
 ### Wyprowadzenia
 <p> Po środku płytki na górze jest złącze Chainbus. Na od front'u  jest żeńskie, na Back'u jest męskie.
 <p> Na dolnej krawędzi płytki powinny być umieszczone złącza wyjścia/wejścia. Na lewej złacza XT60 jeśli ich używasz, a na prawej wszystkie elementy konfiguracyjne i debugowe (potencjometry, przyciski, LED'y).
-![Zdjęcie Płytki z narysowanymi złączami](Zdjęcie_Złącza.png)
+
+![Zdjęcie Płytki z narysowanymi złączami](Zdjecie_Zlacza.png)
 
 
 <p> Domyślnie jako złącz używamy JST-XH 2.5mm. Producent mówi że obsługują do 3A
