@@ -5,12 +5,11 @@
 	(uuid "6219f996-2028-4799-8c3f-69cf5071ab9b")
 	(paper "A4")
 	(title_block
-		(title "MMS3 Stepper Controler")
+		(title "MMS3 Hat template small (Change Me)")
 		(date "2026-02-25")
-		(rev "R0")
+		(rev "A")
 		(comment 1 "Made by Wojciech Szafrański")
 		(comment 2 "Designed in poland")
-		(comment 3 "MMS3 Hat based on Chainbus")
 	)
 	(lib_symbols
 		(symbol "74xx:SN74CB3Q3384APW"
