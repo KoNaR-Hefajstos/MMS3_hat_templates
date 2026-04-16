@@ -36,12 +36,9 @@
 
 <p> Jeśli twoja płytka potrzebuje więcej mocy niż ile ChainBus daje, to można dodatkowo podłączyć Vin po XT60 która obsługuje około 60A.
 
-<p> Jeśli potrzebujesz innych napięć to możesz użyć gotowej przetwonicy step-down z template'a. Można wybierać z niej 24V, 12V, 9V i 6V2. Wszystkie na 2A.
-
 ### Template Mechaniczny
 <p> Nie możesz zmieniać wielkości PCB, rozstawienia otworów montażowych oraz pozycji złącz chainbus (02x16 SMD, 2.54 raster) żeby płytka była kompatybilna z ChainBus'em
-<p> Jeśli są potrzebne będą w twoim projekcie, to na płytce zostały rozstawione złącza XT60 oraz konwerter step down. Te elementy nie zostały jeszcze przetestowane, ale powinny działać.
-<p>Jeśli twój projekt ich nie potrzebuje to możesz je na spokojnie usunąć.
+<p> Na płytce jest też złączka XT-60, ale jeśli jej nie potrzebujesz to możesz ją usunąć
 
 ### Wyprowadzenia
 <p> Po środku płytki na górze jest złącze Chainbus. Na od front'u  jest żeńskie, na Back'u jest męskie.
