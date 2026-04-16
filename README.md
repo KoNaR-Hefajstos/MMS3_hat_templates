@@ -3,7 +3,7 @@
 ### Tworzenie własnego hata
 <p> Żeby stworzyć własnego hata musisz zrobić fork'a tego repo i na nim zaimplementować to co potrzebujesz
 <p> 0. Zobacz na fork'i czy ktoś już nie zrobił płytki której potrzebujesz, jeśli nie to
-<p>1. Wejdź na github'a template'a i kliknij "fork"
+<p> 1. Wejdź na github'a template'a i kliknij "fork"
 
 ![punkt 1](readme_zdjecia/fork.png)
 <p>2. Zmień nazwe i zrób fork'a

@@ -1,4 +1,6 @@
 (sym_lib_table
   (version 7)
   (lib (name "LMR51625")(type "KiCad")(uri "${KIPRJMOD}/lib/kicad-symbols/LMR51625.kicad_sym")(options "")(descr ""))
+  (lib (name "SN74CB3Q3245PWR")(type "KiCad")(uri "${KIPRJMOD}/lib/SN74CB3Q3245PWR.kicad_sym")(options "")(descr ""))
+  (lib (name "SS510C")(type "KiCad")(uri "${KIPRJMOD}/lib/SS510C.kicad_sym")(options "")(descr ""))
 )
