@@ -452,7 +452,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VCC"
+		(symbol "power:PWR_FLAG"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -466,8 +466,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -477,8 +477,8 @@
 					)
 				)
 			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -509,7 +509,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(property "Description" "Special symbol for telling ERC where power comes from"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -520,7 +520,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "flag power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -531,46 +531,8 @@
 					)
 				)
 			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
 					(at 0 0 90)
 					(length 0)
 					(name ""
@@ -589,21 +551,22 @@
 					)
 				)
 			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
 			(embedded_fonts no)
 		)
-	)
-	(text "If you remove this, \nadd direct connection betwen Vin and BRD_VIN"
-		(exclude_from_sim no)
-		(at 142.748 127 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 255 10 0 1)
-			)
-		)
-		(uuid "9bc41689-3990-41db-a116-8b280f8b0166")
 	)
 	(junction
 		(at 152.4 86.36)
@@ -618,16 +581,16 @@
 		(uuid "7acc3c6f-7431-4cb7-86e2-feced733a79b")
 	)
 	(junction
+		(at 160.02 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1b9f246-4e9e-4335-bfa9-3690d9d7a591")
+	)
+	(junction
 		(at 176.53 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7cfc58f-f9f5-4fee-8565-4dfc39d85cb1")
-	)
-	(junction
-		(at 157.48 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fbc14732-6bee-4282-ab64-9bb42b267752")
 	)
 	(wire
 		(pts
@@ -681,17 +644,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 86.36) (xy 163.83 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "338b162d-b127-47eb-8123-b3e5e6d7cb46")
-	)
-	(wire
-		(pts
-			(xy 152.4 86.36) (xy 157.48 86.36)
+			(xy 152.4 86.36) (xy 160.02 86.36)
 		)
 		(stroke
 			(width 0)
@@ -731,7 +684,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 82.55) (xy 157.48 86.36)
+			(xy 160.02 82.55) (xy 160.02 86.36)
 		)
 		(stroke
 			(width 0)
@@ -758,6 +711,16 @@
 			(type default)
 		)
 		(uuid "8ffaeaf7-7c51-4fd7-a89d-1ad16cc1e4fb")
+	)
+	(wire
+		(pts
+			(xy 160.02 86.36) (xy 163.83 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92340868-db37-4e8f-8eb8-2791c5889f09")
 	)
 	(wire
 		(pts
@@ -808,6 +771,28 @@
 			(type default)
 		)
 		(uuid "fa6da35b-e498-4a67-8716-bce39eed1ba1")
+	)
+	(hierarchical_label "VIN_BRD"
+		(shape input)
+		(at 160.02 82.55 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1631c3a6-05cf-47cb-a514-0550488abb7b")
+	)
+	(hierarchical_label "VIN_Chainbus"
+		(shape input)
+		(at 180.34 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d0b3559a-a5a9-459f-ac22-0e61f8c03d9d")
 	)
 	(netclass_flag ""
 		(length 2.54)
@@ -981,83 +966,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 180.34 86.36 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2fe0878f-0a1a-4ca0-a3be-a432f630b775")
-		(property "Reference" "#PWR041"
-			(at 176.53 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BRD_VIN"
-			(at 187.198 86.36 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 180.34 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 180.34 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "395bbc6a-742d-424a-bf39-85f3d5ccd64d")
-		)
-		(instances
-			(project "MMS3_hat_templates"
-				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
-					(reference "#PWR041")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 140.97 97.79 180)
 		(unit 1)
@@ -1160,8 +1068,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 157.48 82.55 0)
+		(lib_id "power:PWR_FLAG")
+		(at 176.53 86.36 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1169,9 +1077,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "482f3d78-37dc-49ed-95b2-aacea4eb394d")
-		(property "Reference" "#PWR039"
-			(at 157.48 86.36 0)
+		(fields_autoplaced yes)
+		(uuid "7267c78c-6e2a-4ac8-a6d5-92cf430c92db")
+		(property "Reference" "#FLG02"
+			(at 176.53 88.265 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1181,8 +1090,8 @@
 				)
 			)
 		)
-		(property "Value" "Vin"
-			(at 157.48 78.74 0)
+		(property "Value" "PWR_FLAG"
+			(at 176.53 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1192,7 +1101,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 157.48 82.55 0)
+			(at 176.53 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1203,7 +1112,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 82.55 0)
+			(at 176.53 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1213,8 +1122,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 157.48 82.55 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 176.53 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1225,12 +1134,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "8b1361c4-b645-43a2-8ec0-0b8f0372543c")
+			(uuid "9bd785d3-b1c0-499e-95f6-3abdd55ed83a")
 		)
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
-					(reference "#PWR039")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -1344,6 +1253,84 @@
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 160.02 86.36 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd447ecf-9679-4257-8c02-89cc67ed253c")
+		(property "Reference" "#FLG03"
+			(at 160.02 88.265 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 160.02 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 160.02 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cfe58175-6938-44f1-94ac-2e185e9a71a8")
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)

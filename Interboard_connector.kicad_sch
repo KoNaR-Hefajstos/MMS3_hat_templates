@@ -3059,6 +3059,84 @@
 		(uuid "de4d8408-7541-43c6-bd77-6a34e840b734")
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 97.79 50.8 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "03ad6ff8-8c9b-4b07-95a5-3b29d2f72d4e")
+		(property "Reference" "#PWR030"
+			(at 97.79 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VIN_CHAINBUS"
+			(at 97.79 40.386 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 97.79 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4ee3f3af-a155-41e9-b5f3-8e97ffe5d9d7")
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/fdb595ff-e94b-4e80-8fe7-e7d367588ab2"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 158.75 50.8 0)
 		(mirror x)
@@ -3220,6 +3298,84 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
+		(at 92.71 50.8 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2dfd78cf-59ae-4557-bb24-7ad01b789901")
+		(property "Reference" "#PWR041"
+			(at 92.71 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VIN_CHAINBUS"
+			(at 92.71 40.386 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 92.71 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9511a9d9-2661-4fa9-83c1-98ba0c17e936")
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/fdb595ff-e94b-4e80-8fe7-e7d367588ab2"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
 		(at 176.53 50.8 0)
 		(mirror y)
 		(unit 1)
@@ -3229,7 +3385,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "37446e97-1dea-4f68-bc62-9c806c49b790")
+		(uuid "323ff514-fede-4c77-94ba-f539d783de65")
 		(property "Reference" "#PWR023"
 			(at 176.53 54.61 0)
 			(hide yes)
@@ -3241,8 +3397,8 @@
 				)
 			)
 		)
-		(property "Value" "BRD_VIN"
-			(at 176.53 43.942 90)
+		(property "Value" "VIN_CHAINBUS"
+			(at 176.53 40.386 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3285,7 +3441,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "afdf13ac-835c-4f68-bbd3-02cb568c430a")
+			(uuid "6496715a-b2a0-48b2-9978-52f0015fc91b")
 		)
 		(instances
 			(project "MMS3_hat_templates"
@@ -3378,7 +3534,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 95.25 50.8 0)
+		(at 168.91 50.8 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -3387,9 +3543,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "406ff36a-4e39-4ba1-927f-3399d4de54bd")
-		(property "Reference" "#PWR07"
-			(at 95.25 54.61 0)
+		(uuid "4636685c-e01a-4aae-9856-c73505e73a75")
+		(property "Reference" "#PWR020"
+			(at 168.91 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3399,8 +3555,8 @@
 				)
 			)
 		)
-		(property "Value" "BRD_VIN"
-			(at 95.25 43.942 90)
+		(property "Value" "VIN_CHAINBUS"
+			(at 168.91 40.386 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3410,7 +3566,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 50.8 0)
+			(at 168.91 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3421,7 +3577,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 50.8 0)
+			(at 168.91 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3432,7 +3588,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 95.25 50.8 0)
+			(at 168.91 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3443,90 +3599,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d4a28214-b2fa-4e64-b5e6-7829bb306785")
+			(uuid "a87c0c7c-d8d6-442b-83cd-1cebcddff5df")
 		)
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/fdb595ff-e94b-4e80-8fe7-e7d367588ab2"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 173.99 50.8 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4383fdbb-3eee-4915-9f49-e1474ee075de")
-		(property "Reference" "#PWR022"
-			(at 173.99 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BRD_VIN"
-			(at 173.99 43.942 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 173.99 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "42a73f09-b34d-4d72-92b5-65267337b6fc")
-		)
-		(instances
-			(project "MMS3_hat_templates"
-				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/fdb595ff-e94b-4e80-8fe7-e7d367588ab2"
-					(reference "#PWR022")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -3607,6 +3685,84 @@
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/fdb595ff-e94b-4e80-8fe7-e7d367588ab2"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 173.99 50.8 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4e7b3d96-1829-4b96-b412-4fa071cd55b0")
+		(property "Reference" "#PWR022"
+			(at 173.99 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VIN_CHAINBUS"
+			(at 173.99 40.386 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 173.99 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b4aece15-01a4-4714-bc21-6a5a8a3b29d3")
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/fdb595ff-e94b-4e80-8fe7-e7d367588ab2"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -3978,8 +4134,8 @@
 				)
 			)
 		)
-		(property "Value" "BRD_VIN"
-			(at 100.33 43.942 90)
+		(property "Value" "VIN_CHAINBUS"
+			(at 100.33 40.386 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4297,84 +4453,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 171.45 50.8 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9f162230-6059-4262-80ea-519aa845714b")
-		(property "Reference" "#PWR021"
-			(at 171.45 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BRD_VIN"
-			(at 171.45 43.942 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 171.45 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ea1931d6-bb3c-4def-aca7-bd6a4c1b79cb")
-		)
-		(instances
-			(project "MMS3_hat_templates"
-				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/fdb595ff-e94b-4e80-8fe7-e7d367588ab2"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 194.31 50.8 0)
 		(mirror y)
@@ -4616,7 +4694,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 168.91 50.8 0)
+		(at 171.45 50.8 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4625,9 +4703,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "b8c5573b-afc1-40b9-ab8b-08638d2583a2")
-		(property "Reference" "#PWR020"
-			(at 168.91 54.61 0)
+		(uuid "b5f421f2-b721-4a81-9c82-aae66e4107fc")
+		(property "Reference" "#PWR021"
+			(at 171.45 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4637,8 +4715,8 @@
 				)
 			)
 		)
-		(property "Value" "BRD_VIN"
-			(at 168.91 43.942 90)
+		(property "Value" "VIN_CHAINBUS"
+			(at 171.45 40.386 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4648,7 +4726,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 50.8 0)
+			(at 171.45 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4659,7 +4737,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 50.8 0)
+			(at 171.45 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4670,7 +4748,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 168.91 50.8 0)
+			(at 171.45 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4681,90 +4759,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "fd93c025-7e7a-4f3f-a46a-292d62e0ad14")
+			(uuid "51158ce7-6a36-47e6-ba68-3a75b7f47247")
 		)
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/fdb595ff-e94b-4e80-8fe7-e7d367588ab2"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 97.79 50.8 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b944929b-b3be-4c50-b983-01647d7d03df")
-		(property "Reference" "#PWR08"
-			(at 97.79 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BRD_VIN"
-			(at 97.79 43.942 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 97.79 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 97.79 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 97.79 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "375e0511-061a-45fc-8959-69988cf4a1fd")
-		)
-		(instances
-			(project "MMS3_hat_templates"
-				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/fdb595ff-e94b-4e80-8fe7-e7d367588ab2"
-					(reference "#PWR08")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -5011,6 +5011,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 95.25 50.8 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cd73c5e2-8b68-44d2-ab5e-911664c4795e")
+		(property "Reference" "#PWR039"
+			(at 95.25 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VIN_CHAINBUS"
+			(at 95.25 40.386 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "083f879a-a9a7-4d95-a284-3315bb118323")
+		)
+		(instances
+			(project "MMS3_hat_templates"
+				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/fdb595ff-e94b-4e80-8fe7-e7d367588ab2"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 120.65 50.8 0)
 		(mirror x)
@@ -5245,84 +5323,6 @@
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/fdb595ff-e94b-4e80-8fe7-e7d367588ab2"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 92.71 50.8 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e666be90-e615-4016-9646-baeb4af35eea")
-		(property "Reference" "#PWR06"
-			(at 92.71 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BRD_VIN"
-			(at 92.71 43.942 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 92.71 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 92.71 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 92.71 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d8067fd7-7ecb-4661-acbb-e58b66fe1bfb")
-		)
-		(instances
-			(project "MMS3_hat_templates"
-				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/fdb595ff-e94b-4e80-8fe7-e7d367588ab2"
-					(reference "#PWR06")
 					(unit 1)
 				)
 			)
