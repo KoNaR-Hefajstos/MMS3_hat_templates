@@ -947,7 +947,7 @@
 			(justify left bottom)
 		)
 		(uuid "f2b4e0fb-1834-42c9-aa70-43fdfbacf699")
-		(property "Net Class" "50V "
+		(property "Net Class" "50V"
 			(at 150.876 82.042 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -981,7 +981,7 @@
 			(justify left bottom)
 		)
 		(uuid "f3e92d2f-8c7f-4901-8fe1-be9a5f8a330b")
-		(property "Net Class" "50V "
+		(property "Net Class" "50V"
 			(at 175.006 80.772 0)
 			(show_name no)
 			(do_not_autoplace no)
