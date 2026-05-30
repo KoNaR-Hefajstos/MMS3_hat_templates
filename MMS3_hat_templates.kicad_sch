@@ -1746,6 +1746,19 @@
 		)
 	)
 	(rectangle
+		(start 12.446 12.954)
+		(end 122.174 103.886)
+		(stroke
+			(width 0.6)
+			(type dash)
+			(color 132 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c1b5567b-a133-4b94-b94c-b5b83ab5b321")
+	)
+	(rectangle
 		(start 64.77 166.37)
 		(end 173.99 196.85)
 		(stroke
@@ -1757,9 +1770,22 @@
 		)
 		(uuid "d2f5994d-a082-4dc0-9d9c-132748efe69d")
 	)
+	(text "<-- Use those connections"
+		(exclude_from_sim no)
+		(at 132.334 82.042 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.762)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "49ee80fe-5ed3-4b27-958f-b3ae347d72e3")
+	)
 	(text "ID"
 		(exclude_from_sim no)
-		(at 71.628 26.162 0)
+		(at 72.898 27.432 0)
 		(effects
 			(font
 				(size 7.62 7.62)
@@ -1782,6 +1808,25 @@
 		)
 		(uuid "a60011c6-4bf3-429f-aac8-4cc0878f566d")
 	)
+	(text "Chainbus connector and bus switch - Do Not Modify"
+		(exclude_from_sim no)
+		(at 15.24 101.092 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.762)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "eb23fbf6-e79d-4ee2-8f15-f080235c68bd")
+	)
+	(junction
+		(at 102.87 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0fd750be-35a9-423d-8138-fa6b8623226e")
+	)
 	(junction
 		(at 127 176.53)
 		(diameter 0)
@@ -1793,14 +1838,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9497a369-d276-4e81-a883-05fc8f9c0337")
-	)
-	(no_connect
-		(at 96.52 82.55)
-		(uuid "1294e8cc-6db1-48df-b2b9-522db6cbe0fa")
-	)
-	(no_connect
-		(at 96.52 80.01)
-		(uuid "f8d585f9-12e9-4f7d-a509-04e032f8bccf")
 	)
 	(wire
 		(pts
@@ -1824,7 +1861,7 @@
 	)
 	(bus
 		(pts
-			(xy 96.52 77.47) (xy 101.6 77.47)
+			(xy 97.79 78.74) (xy 102.87 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1834,7 +1871,7 @@
 	)
 	(bus
 		(pts
-			(xy 101.6 77.47) (xy 101.6 21.59)
+			(xy 102.87 78.74) (xy 102.87 22.86)
 		)
 		(stroke
 			(width 0)
@@ -1874,13 +1911,23 @@
 	)
 	(bus
 		(pts
-			(xy 41.91 82.55) (xy 52.07 82.55)
+			(xy 43.18 83.82) (xy 53.34 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "45dfbeab-2998-45b7-9b70-34ea634042c1")
+	)
+	(bus
+		(pts
+			(xy 97.79 81.28) (xy 128.27 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "512ebbd9-f8fb-4db1-973e-599874508b19")
 	)
 	(wire
 		(pts
@@ -1902,6 +1949,16 @@
 		)
 		(uuid "592734ca-792c-4ca8-99d3-4af5d5c402c0")
 	)
+	(bus
+		(pts
+			(xy 97.79 83.82) (xy 128.27 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b7f0810-f5c9-454a-88aa-ca3a16b7fb85")
+	)
 	(wire
 		(pts
 			(xy 110.49 184.15) (xy 110.49 189.23)
@@ -1914,7 +1971,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 73.66) (xy 52.07 73.66)
+			(xy 43.18 74.93) (xy 53.34 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1924,7 +1981,7 @@
 	)
 	(bus
 		(pts
-			(xy 41.91 80.01) (xy 52.07 80.01)
+			(xy 43.18 81.28) (xy 53.34 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1944,7 +2001,7 @@
 	)
 	(bus
 		(pts
-			(xy 101.6 21.59) (xy 95.25 21.59)
+			(xy 102.87 22.86) (xy 96.52 22.86)
 		)
 		(stroke
 			(width 0)
@@ -1964,7 +2021,7 @@
 	)
 	(bus
 		(pts
-			(xy 41.91 77.47) (xy 52.07 77.47)
+			(xy 43.18 78.74) (xy 53.34 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1981,6 +2038,16 @@
 			(type default)
 		)
 		(uuid "b556105d-ef4a-4afc-8b77-5c38b933e1cf")
+	)
+	(bus
+		(pts
+			(xy 102.87 78.74) (xy 128.27 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb43a3cb-e832-42ad-a9f2-4bd6e93bebe4")
 	)
 	(wire
 		(pts
@@ -4817,7 +4884,7 @@
 		)
 	)
 	(image
-		(at 74.93 59.69)
+		(at 76.2 60.96)
 		(scale 0.61046)
 		(uuid "ce96a2af-807c-4b66-a7d9-9d6af21fa49a")
 		(data "iVBORw0KGgoAAAANSUhEUgAAARAAAACZCAYAAADnwmWxAAAAAXNSR0IArs4c6QAAAARnQU1BAACx"
@@ -4962,7 +5029,7 @@
 		)
 	)
 	(image
-		(at 28.493 56.771)
+		(at 29.763 58.041)
 		(scale 0.276586)
 		(uuid "e0fcf928-3504-4306-a668-87ed08d94ac5")
 		(data "iVBORw0KGgoAAAANSUhEUgAAA+gAAAPoCAIAAADCwUOzAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4"
@@ -15117,7 +15184,7 @@
 		)
 	)
 	(sheet
-		(at 62.23 17.78)
+		(at 63.5 19.05)
 		(size 33.02 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15133,7 +15200,7 @@
 		)
 		(uuid "56050d79-5900-47d6-893d-3da0e8bf5810")
 		(property "Sheetname" "ID EEPROM"
-			(at 62.23 17.0684 0)
+			(at 63.5 18.3384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15144,7 +15211,7 @@
 			)
 		)
 		(property "Sheetfile" "ID_EEPROM.kicad_sch"
-			(at 62.23 34.8746 0)
+			(at 63.5 36.1446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15155,7 +15222,7 @@
 			)
 		)
 		(pin "Chainbus{I2C}" bidirectional
-			(at 95.25 21.59 0)
+			(at 96.52 22.86 0)
 			(uuid "00925253-b2dc-4ef2-9074-051eeff3d11b")
 			(effects
 				(font
@@ -15173,7 +15240,7 @@
 		)
 	)
 	(sheet
-		(at 52.07 41.91)
+		(at 53.34 43.18)
 		(size 44.45 49.53)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15189,7 +15256,7 @@
 		)
 		(uuid "ec6d73af-72b0-4068-85fb-cca3c5143749")
 		(property "Sheetname" "Bus_switch"
-			(at 52.07 41.1984 0)
+			(at 53.34 42.4684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15200,7 +15267,7 @@
 			)
 		)
 		(property "Sheetfile" "Bus_switch.kicad_sch"
-			(at 52.07 92.0246 0)
+			(at 53.34 93.2946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15211,7 +15278,7 @@
 			)
 		)
 		(pin "Chainbus_In{I2C}" bidirectional
-			(at 52.07 77.47 180)
+			(at 53.34 78.74 180)
 			(uuid "543067df-998c-4be4-af4c-a616d6f0c33b")
 			(effects
 				(font
@@ -15221,7 +15288,7 @@
 			)
 		)
 		(pin "Chainbus_In{SPI}" bidirectional
-			(at 52.07 80.01 180)
+			(at 53.34 81.28 180)
 			(uuid "defca588-26a5-474d-8867-2dd2b316ffac")
 			(effects
 				(font
@@ -15231,7 +15298,7 @@
 			)
 		)
 		(pin "Chainbus_In{UART}" bidirectional
-			(at 52.07 82.55 180)
+			(at 53.34 83.82 180)
 			(uuid "94982f76-5951-485b-ba73-7f3f3976a8a3")
 			(effects
 				(font
@@ -15241,7 +15308,7 @@
 			)
 		)
 		(pin "Chainbus{I2C}" bidirectional
-			(at 96.52 77.47 0)
+			(at 97.79 78.74 0)
 			(uuid "a85948b7-39b6-4f06-8c92-1d6a8f13bb5b")
 			(effects
 				(font
@@ -15251,7 +15318,7 @@
 			)
 		)
 		(pin "Chainbus{SPI}" bidirectional
-			(at 96.52 80.01 0)
+			(at 97.79 81.28 0)
 			(uuid "545f8b08-5587-4731-9867-cbcb803cb773")
 			(effects
 				(font
@@ -15261,7 +15328,7 @@
 			)
 		)
 		(pin "Chainbus{UART}" bidirectional
-			(at 96.52 82.55 0)
+			(at 97.79 83.82 0)
 			(uuid "f52b522d-e302-466c-82b3-308eb87b4cf0")
 			(effects
 				(font
@@ -15271,7 +15338,7 @@
 			)
 		)
 		(pin "SEL1" input
-			(at 52.07 73.66 180)
+			(at 53.34 74.93 180)
 			(uuid "fd8431ab-58bf-4ca6-beba-c16c523c297a")
 			(effects
 				(font
@@ -15365,7 +15432,7 @@
 		)
 	)
 	(sheet
-		(at 15.24 41.91)
+		(at 16.51 43.18)
 		(size 26.67 49.53)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15381,7 +15448,7 @@
 		)
 		(uuid "fdb595ff-e94b-4e80-8fe7-e7d367588ab2")
 		(property "Sheetname" "Interboard_connector"
-			(at 15.24 41.1984 0)
+			(at 16.51 42.4684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15392,7 +15459,7 @@
 			)
 		)
 		(property "Sheetfile" "Interboard_connector.kicad_sch"
-			(at 15.24 92.0246 0)
+			(at 16.51 93.2946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15403,7 +15470,7 @@
 			)
 		)
 		(pin "Chainbus{I2C}" bidirectional
-			(at 41.91 77.47 0)
+			(at 43.18 78.74 0)
 			(uuid "e4414ded-864e-4caf-9856-b76c94026875")
 			(effects
 				(font
@@ -15413,7 +15480,7 @@
 			)
 		)
 		(pin "Chainbus{SPI}" bidirectional
-			(at 41.91 80.01 0)
+			(at 43.18 81.28 0)
 			(uuid "ee70cad2-03da-491d-803a-86166ec887aa")
 			(effects
 				(font
@@ -15423,7 +15490,7 @@
 			)
 		)
 		(pin "Chainbus{UART}" bidirectional
-			(at 41.91 82.55 0)
+			(at 43.18 83.82 0)
 			(uuid "9ef18713-64b7-44b1-8fee-9da1d2d90b6f")
 			(effects
 				(font
@@ -15433,7 +15500,7 @@
 			)
 		)
 		(pin "SEL1" output
-			(at 41.91 73.66 0)
+			(at 43.18 74.93 0)
 			(uuid "6e7ecb55-a5b1-4827-94ef-f16e12da4026")
 			(effects
 				(font
