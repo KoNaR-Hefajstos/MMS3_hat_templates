@@ -1,53 +1,159 @@
-# Zestaw template'ów kompatybilnych z płytką MMS3 i systemem ChainBus
+# Templatka Hat'ów ChainBus
 
-### Tworzenie własnego hata
-<p> Żeby stworzyć własnego hata musisz zrobić fork'a tego repo i na nim zaimplementować to co potrzebujesz
-<p> 0. Zobacz na fork'i czy ktoś już nie zrobił płytki której potrzebujesz, jeśli nie to
-<p> 1. Wejdź na github'a template'a i kliknij "fork"
+
+## Sekcja 0: Jak szybko, dobrze i tanio zrobić hata z dokumentacją
+
+Szybka lista punkcików to wyklepania zanim hat magicznie się zrobi
+
+1. **Sprawdź istniejące projekty:** Zobacz czy nie ma już jakiegoś hata który robi co potrzebujesz. Zobacz w forkach i poszukaj na githubie po hashtag'ach, jeśli nie to
+2. **Utwórz Fork:** Kliknij przycisk **Fork** w prawym górnym rogu tego repozytorium.
 
 ![punkt 1](readme_zdjecia/fork.png)
-<p>2. Zmień nazwe i zrób fork'a
-<p>3. Sklonuj repo swojego właśnie zrobionego forka
-<p>4. Usuń niepotrzebne pliki z template'a (zdjęcia), zaktualizuj readme, zmień nazwy plików .kicad z MMS_hat_templates na zgodną z twoim projektem i zmień nazwy w tabelce w prawym dolnym rogu
-<p>5. Gotowe, możesz push'ować nowe commity do swojego fork'a
 
-### Łączenie hat'ów
-<p> Na jednym MMS3 można zamontować do 8 hatów. Łączy się przez wpinianie kolejnego Hat'a do złącza ChainBus wcześniejszego
+1. **Konfiguracja repozytorium:** Daj mu adekwatną nazwe, i z'clone'uj forka do siebie na pc
+2. **Zasady projektowania:**
+   * Dokładniejsza dokumentacja znajduje się w Sekcji 2.
+   * Do komunikacji możesz używać **wyłącznie** interfejsów: **I2C, SPI oraz UART**.
+   * Modyfikuj połączeń złącza chainbus, bus switch'a i EEPROM'a
+   * Nie modyfikuj zarysu płytki, otworów montażowych ani pozycji złączy ChainBus.
+   * Możesz usunąć złącze XT60, jeśli Twój projekt go nie wymaga.
 
-### Komunikacja oraz sterowanie
-<p> ChainBus jest w pełni cyfrowy. GPIO nie sterują bezpośrednio funkcjonalnością, tylko poprzez magistrale komunikacyjne i IC.
-<p> Znaczy to, że zamiast używać GPIO do przełączania LED'a, odczytywania krańcówek czy zadawania PWM'a musisz zaimplementować jakiegoś IC który to robi. Np:
-<p> MCU --> expander gpio po I2C --> Dioda LED
-<p> MCU wybiera do którego hat'a się podpina przy użyciu bus switcha. To znaczy że magistrale I2C, SPI i UART są niezależne od siebie na każdym hat'ie (nie musisz się martwić o zajęte adresy I2C). Ale musisz pamiętać żeby podpinać sie z busa Chainbus a nie Chainbus_IN (czyli tego za bus swichem)
-<p> Dodatkowo w celu identyfikacji każdego hat'a jest na nim pamięć EEPROM po I2C. Możesz użyć np. M24C64-W z obudową SOIC-8 i addresie 1010000 (przy A0 A1 A2 zwartych do GND)
+### Checklista przed zakończeniem projektu
+Przed oznaczeniem projektu jako gotowy i wykonaniem ostatecznego commita, upewnij się, że zrealizowałeś poniższe punkty:
+
+
+- [ ] Poprawiono nazwy, numer rewizji i dane w prawym dolnym rogu schematu i PCB.
+- [ ] Dodano podpis autora/autorów oraz aktualny numer wersji na PCB.
+- [ ] Zaktualizowano readme (usunąć tą sekcje)
+- [ ] Zaktualizowano opis repo żeby opisywał krótko co robi PCB i jakie ma arkusze hierarchiczne do użycia w nowych hat'ach
+- [ ] Usunięto z repozytorium zdjęcia z template'a.
+- [ ] Wybrano i zaktualizowano licencję projektu **Uwaga: Wstpęnie już są użyte licencje**.
+- [ ] Wygenerowano pliki produkcyjne Gerber
+- [ ] Zrobiono commit'a i push'a
+
+
+### Licencja
+Co do licencji, wstępnie jest użyta
+* Dla template'a - CC0 1.0 Universal  -> Róbcie co chcecie: Zmieniajce, usuńcie mój podpis, zróbcie closed source. Mi jest to obojętne
+* PCB - CERN-OHL-W -> Ktoś może to modyfikować i sprzedać, ale musi zostawić projekt open source i ciebie jako twórce
+* Software - MIT License -> Ktoś może to modyfikować i sprzedać, musi odnotować ciebie jako twórce ale **NIE MUSI ZOSTAWIĆ OPEN SOURCE**
+
+Jeśli je modyfikujesz, pamiętaj usunać treści starych licencji
+
+---
+
+## Sekcja 1: Dokumentacja Hat'a
+
+### Krótki opis projektu
+[Tutaj wpisz krótki opis, co robi Twój moduł, jakie ma przeznaczenie i kluczowe parametry użytkowe.]
+
+### Zgodność ze standardem ChainBus
+
+* ✅ / ❌ Używa złącza ChainBus, nie zmienia jego miejsca ani pinoutu.
+* ✅ / ❌ Używa wyłącznie interfejsów I2C, SPI lub UART i nie inicjuje samodzielnie nowych transmisji (Nie jest master'em I2C albo SPI).
+* ✅ / ❌ Spełnia wymagania mechaniczne standardu (wymiary PCB, rozstaw otworów).
+* ✅ / ❌ Pobiera maksymalny prąd zgodny z ilością na jednego hat'a
+* ✅ / ❌ Obsługuje napięcie wejściowe BRD_VIN do wartości 48V.
+<!-- Usuń odpowiednie emoji. Wszystkie powinny być na zielono. Jeśli z czymś nie jest zgodny to napisz w jaki sposób -->
+
+### Komunikacja i adresowanie
+
+#### Adresacja I2C
+Poniższa tabela przedstawia adresację urządzeń na magistrali I2C. Wszystkie adresy podane są w formacie 7-bitowym.
+
+| Układ (IC)    | Funkcja                               |  Address   |
+| :------------ | :------------------------------------ | :--------: |
+| **JP3721**    | Sterownik piekarnika                  | `1010000b` |
+| **PCAL9535A** | Ekspander GPIO (Dioda LED, Krańcówki) | `0100000b` |
+| **TMP102**    | Czujnik temperatury                   | `1001000b` |
+
+#### Magistrala SPI
+Urządzenia SPI podłączone są bezpośrednio do magistrali systemowej bez użycia dodatkowych multiplekserów.
+
+| Układ (IC)  | Funkcja                     | chainbus/multiplexer |
+| :---------- | :-------------------------- | :------------------: |
+| **TMC5160** | Sterownik silnika krokowego |      `chainbus`      |
+
+#### Magistrala UART
+Komunikacja szeregowa UART realizowana jest w sposób bezpośredni z układem docelowym.
+
+| Układ (IC)   | Funkcja       | chainbus/multiplexer |
+| :----------- | :------------ | :------------------: |
+| **ESP32-C3** | Adapter WI-FI |      `chainbus`      |
+
+### Pinout złączy
+
+| Jn     | Co                                         | Jaki pin co robi                                                     |
+| :----- | :----------------------------------------- | :------------------------------------------------------------------- |
+| **J1** | Zasilanie zewnętrzne silników              | Pin 1: VIN (zasilanie dodatnie)<br>Pin 2: GND (masa zasilania)       |
+| **J2** | Wyjście faz silnika krokowego              | Pin 1: Faza A1<br>Pin 2: Faza A2<br>Pin 3: Faza B1<br>Pin 4: Faza B2 |
+| **J3** | Wejście czujnika krańcowego (Limit Switch) | Pin 1: Sygnał wejściowy (z rezystorem Pull-Up)<br>Pin 2: GND (masa)  |
+
+### Konfiguracja układu (Zworki/Rezystory)
+
+| Co             | Jak podłączone | Efekt       |
+| :------------- | :------------- | :---------- |
+| **J1**         | 1-2 zwarte     | Silnik DC   |
+|                | rozwarte       | Silnik BLDC |
+| **J2**         | 1-2 zwarte     | 3.3V out    |
+|                | 2-3 zwarte     | 5V out      |
+| **R1, R2, R3** | Wlutowany R1   | 3.3V out    |
+|                | Wlutowany R2   | 5V out      |
+|                | Wlutowany R3   | VIN out     |
+
+
+### Szczegółowy opis techniczny
+[Tutaj umieść opis działania układu, parametry maksymalne etc]
+
+### Gotowe arkusze hierarchiczne
+W projekcie zaprojektowano/użyto następujących arkuszy hierarchicznych:
+* [Nazwa arkusza 1] – [Krótki opis funkcjonalności, np. Zasilacz impulsowy 5V] - [ oryginalny/ wzięty z hata XXX]
+* [Nazwa arkusza 2] – [Krótki opis] - [ -||- ]
+
+---
+
+## Sekcja 2: Specyfikacja standardu ChainBus
+
+### Architektura i łączenie modułów
+Standard ChainBus umożliwia modułowe łączenie hatów. Na jednym MMS3 można zamontować pionowo **do 8 hat'ów**. Połączenie realizowane jest poprzez wpięcie złącza męskiego kolejnego hat'a w złącze żeńskie poprzedniego
+
+### Komunikacja i sterowanie
+Magistrala ChainBus jest w pełni cyfrowa. Płyta główna nie steruje bezpośrednio sygnałami ogólnego przeznaczenia (GPIO) na poszczególnych hat'ach. Wszelkie operacje (np. obsługa diod LED, odczyt krańcówek, generowanie sygnałów PWM) muszą być realizowane przez dedykowane układy scalone (np. ekspandery portów, sterowniki) komunikujące się przez interfejsy systemowe.
+
+*Przykład:*
+`MCU` $\rightarrow$ `Expander GPIO po I2C` $\rightarrow$ `Dioda LED`
+
+Wybór aktywnego modułu realizowany jest przez układ przełącznika magistrali (bus switch) na płycie głównej. Dzięki temu linie I2C, SPI i UART są niezależne dla każdego hat'a (brak konfliktów adresów I2C między różnymi hatami).
+* **Identyfikacja:** Każdy moduł powinien posiadać pamięć EEPROM na magistrali I2C w celu identyfikacji płyty przez system - układ M24C64-W skonfigurowany na adres `1010000` przy liniach adresowych A0, A1, A2 zwartych do masy.
 
 ### Zasilanie
-<p> Przez złącze ChainBus idzie następujące zasilanie
+Złącze ChainBus dostarcza następujące linie zasilania:
 
-|          |   Napięcie    | Prąd na wszystkie haty | Prąd dla jednego hat'a |
-| -------- | :-----------: | :--------------------: | ---------------------: |
-| 5V       |      5V       |           1A           |                  125mA |
-| 12V stby |      12V      |          0.5A          |                   65mA |
-| BRD_VIN  | Od 12V do 48V |          1.5A          |                  185mA |
-
-<p> Prąd dla jednego hat'a został policzony w wypadku kiedy wszystkie 8 hat'ów jest zamontowanych. Jeśli na jeden MMS zamontujesz mniej hat'ów to każdy może pociągnąć więcej prądu.
-
-<p> Hat'y powinny obsługiwać do 48V z BRD_VIN. Komponenty powinny być dostosowane aż do tego napięcia.
-
-<p> Jeśli twoja płytka potrzebuje więcej mocy niż ile ChainBus daje, to można dodatkowo podłączyć Vin po XT60 która obsługuje około 60A.
-
-### Template Mechaniczny
-<p> Nie możesz zmieniać wielkości PCB, rozstawienia otworów montażowych oraz pozycji złącz chainbus (02x16 SMD, 2.54 raster) żeby płytka była kompatybilna z ChainBus'em
-<p> Na płytce jest też złączka XT-60, ale jeśli jej nie potrzebujesz to możesz ją usunąć
-
-### Wyprowadzenia
-<p> Po środku płytki na górze jest złącze Chainbus. Na od front'u  jest żeńskie, na Back'u jest męskie.
-<p> Na dolnej krawędzi płytki powinny być umieszczone złącza wyjścia/wejścia i złacza XT60 jeśli ich używasz. Na prawej wszystkie elementy konfiguracyjne i debugowe (potencjometry, przyciski, LED'y).
+| Magistrala zasilania | Napięcie znamionowe | Maksymalny prąd (łączny dla 8 hatów) | Szacowany prąd na jeden hat |
+| :------------------- | :-----------------: | :----------------------------------: | :-------------------------: |
+| **5V**               |        5.0 V        |                1.0 A                 |           125 mA            |
+| **12V stby**         |       12.0 V        |                0.5 A                 |            65 mA            |
+| **BRD_VIN**          |   12.0 V – 48.0 V   |                1.5 A                 |           185 mA            |
 
 
+*   Komponenty podłączone do linii `BRD_VIN` muszą być przystosowane do pracy z napięciem od 12V do **48 V**.
+*   W przypadku zapotrzebowania na wyższą moc, dopuszczalne jest zastosowanie dodatkowego złącza zasilania XT60 (obciążalność do ok. 60 A).
 
+### Wymagania mechaniczne i złącza
+* **Wymiary PCB:** Niedozwolona jest zmiana obrysu płytki oraz położenia otworów montażowych, aby zachować kompatybilność mechaniczną.
+* **Pozycjonowanie złączy ChainBus:** Położenie złącza standardu 2x16 SMD (raster 2.54 mm) musi być zgodne z szablonem. Złącze żeńskie montowane jest na stronie FRONT, natomiast złącze męskie na stronie BACK.
+* **Interfejsy zewnętrzne:** Złącza wejścia/wyjścia (domyślnie standard JST-XH 2.5 mm o obciążalności do 3 A) oraz opcjonalne złącze XT60 powinny być umieszczone przy dolnej krawędzi płytki. Elementy regulacyjne i sygnalizacyjne (potencjometry, przełączniki, diody LED) należy lokalizować przy prawej krawędzi płytki.
+* **Komponenty** Wszystkie komponenty powinny być na stronie front płytki żeby nie haczyły o elementy ze wcześniejszego hat'a
 
-<p> Domyślnie jako złącz używamy JST-XH 2.5mm. Producent mówi że obsługują do 3A
+---
 
-### Przykładowy hat
-[Sterownik silników krokowych. Komunikacja po SPI](https://github.com/KoNaR-Hefajstos/MMS3_hat_stepper_controler)
+## Sekcja 3: Licencja, linki i tagi
+
+### Licencjonowanie projektu
+
+*   **PCB:** [CERN-OHL-W](https://ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2) - Umożliwia modyfikacje i sprzedaż, ale musi pozostawić oryginalnego autora i zmiany muszą być open source
+*   **Software:** [MIT License](https://opensource.org/licenses/MIT) - Umożliwia modyfikacje i sprzedaż, ale musi pozostawić oryginalnego autora. Zmiany **nie muszą być open source**
+
+[Template](https://github.com/KoNaR-Hefajstos/MMS3_hat_templates/) jest na licencji CC0 1.0 Universal. **Reszta projektu nie jest na tej licencji**
+### Tagi projektu
+#chainbus #MMS3 #ModuCard
