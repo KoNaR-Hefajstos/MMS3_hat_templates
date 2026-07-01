@@ -1018,7 +1018,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ff6488c-dd9e-444f-afe8-242c0dfa59ef")
-		(property "Reference" "J4"
+		(property "Reference" "J401"
 			(at 115.57 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1201,7 +1201,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
-					(reference "J4")
+					(reference "J401")
 					(unit 1)
 				)
 			)
@@ -1219,7 +1219,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b4bf1a3-9299-4a0f-a632-011cd216f9dc")
-		(property "Reference" "J5"
+		(property "Reference" "J402"
 			(at 140.97 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1402,7 +1402,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
-					(reference "J5")
+					(reference "J402")
 					(unit 1)
 				)
 			)
@@ -1420,7 +1420,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7267c78c-6e2a-4ac8-a6d5-92cf430c92db")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG0402"
 			(at 176.53 88.265 0)
 			(hide yes)
 			(show_name no)
@@ -1480,7 +1480,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
-					(reference "#FLG02")
+					(reference "#FLG0402")
 					(unit 1)
 				)
 			)
@@ -1498,7 +1498,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76e42219-d5c6-4451-bec5-b584de3c5e06")
-		(property "Reference" "D1"
+		(property "Reference" "D401"
 			(at 167.64 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1824,7 +1824,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
-					(reference "D1")
+					(reference "D401")
 					(unit 1)
 				)
 			)
@@ -1842,7 +1842,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd447ecf-9679-4257-8c02-89cc67ed253c")
-		(property "Reference" "#FLG03"
+		(property "Reference" "#FLG0401"
 			(at 160.02 88.265 0)
 			(hide yes)
 			(show_name no)
@@ -1902,7 +1902,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
-					(reference "#FLG03")
+					(reference "#FLG0401")
 					(unit 1)
 				)
 			)
@@ -1920,7 +1920,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eebdd2e0-7c94-4a1e-9d2e-c9e02d368a57")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR0401"
 			(at 157.48 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -1980,7 +1980,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/f11c3b61-ae6a-4858-9d37-bbf426f44fb0"
-					(reference "#PWR040")
+					(reference "#PWR0401")
 					(unit 1)
 				)
 			)

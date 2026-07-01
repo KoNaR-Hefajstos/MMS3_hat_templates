@@ -12741,7 +12741,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "062a0302-1940-4722-9b55-b1b7eb70b86a")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR0103"
 			(at 86.36 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -12802,7 +12802,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "#PWR069")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -12820,7 +12820,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09da0137-3824-439e-854d-ddec931d6a32")
-		(property "Reference" "#SYM2"
+		(property "Reference" "#SYM102"
 			(at 52.07 190.5 90)
 			(hide yes)
 			(show_name no)
@@ -12878,7 +12878,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "#SYM2")
+					(reference "#SYM102")
 					(unit 1)
 				)
 			)
@@ -12897,7 +12897,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38d63763-223f-42d7-b917-687f37c95dd2")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR0108"
 			(at 167.64 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -12957,7 +12957,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "#PWR080")
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -12975,7 +12975,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "3c0d1340-32b8-40ed-a067-5f7a90eb3ce7")
-		(property "Reference" "H2"
+		(property "Reference" "H102"
 			(at 35.56 171.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13132,7 +13132,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "H2")
+					(reference "H102")
 					(unit 1)
 				)
 			)
@@ -13150,7 +13150,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4604ea5c-3ae9-48bb-a0e1-5645e879282d")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG0101"
 			(at 157.48 179.705 0)
 			(hide yes)
 			(show_name no)
@@ -13210,7 +13210,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "#FLG01")
+					(reference "#FLG0101")
 					(unit 1)
 				)
 			)
@@ -13228,7 +13228,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69fe08b2-1f35-451a-bde8-c7c767f8c35d")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR0105"
 			(at 110.49 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -13288,7 +13288,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "#PWR073")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -13306,7 +13306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "749ffd30-1e25-4d65-bebf-b361eff358c3")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR0106"
 			(at 127 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -13366,7 +13366,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "#PWR075")
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -13384,7 +13384,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "897b36dc-5e00-4781-9695-f9572ec770d3")
-		(property "Reference" "H3"
+		(property "Reference" "H103"
 			(at 35.56 176.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13541,7 +13541,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "H3")
+					(reference "H103")
 					(unit 1)
 				)
 			)
@@ -13559,7 +13559,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c8242a2-17e4-48b5-8859-af503984483a")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR0101"
 			(at 16.51 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -13619,7 +13619,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "#PWR01")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -13637,7 +13637,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92ad2d58-af73-4f88-a23b-3e867183e5a2")
-		(property "Reference" "C18"
+		(property "Reference" "C102"
 			(at 129.54 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13965,7 +13965,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "C18")
+					(reference "C102")
 					(unit 1)
 				)
 			)
@@ -13983,7 +13983,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af79b0d8-d47d-404a-9c7c-94842ef6a7fa")
-		(property "Reference" "#SYM1"
+		(property "Reference" "#SYM101"
 			(at 55.88 178.054 0)
 			(hide yes)
 			(show_name no)
@@ -14041,7 +14041,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "#SYM1")
+					(reference "#SYM101")
 					(unit 1)
 				)
 			)
@@ -14059,7 +14059,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "bacc9794-7325-4356-adf3-87765f583942")
-		(property "Reference" "H4"
+		(property "Reference" "H104"
 			(at 35.56 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14216,7 +14216,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "H4")
+					(reference "H104")
 					(unit 1)
 				)
 			)
@@ -14234,7 +14234,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c8ce61d0-35b4-429d-8aa1-236fd73ec981")
-		(property "Reference" "H1"
+		(property "Reference" "H101"
 			(at 19.05 171.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14405,7 +14405,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "H1")
+					(reference "H101")
 					(unit 1)
 				)
 			)
@@ -14423,7 +14423,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce45453a-584b-44f7-9b99-fc79de0fe678")
-		(property "Reference" "U4"
+		(property "Reference" "U101"
 			(at 110.49 168.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14801,7 +14801,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "U4")
+					(reference "U101")
 					(unit 1)
 				)
 			)
@@ -14819,7 +14819,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d844f707-7c17-4a2a-89f9-f3ab5a70692a")
-		(property "Reference" "H5"
+		(property "Reference" "H105"
 			(at 35.56 186.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14976,7 +14976,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "H5")
+					(reference "H105")
 					(unit 1)
 				)
 			)
@@ -14994,7 +14994,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8b1db0a-b800-4084-a024-52a0c121e448")
-		(property "Reference" "C16"
+		(property "Reference" "C101"
 			(at 95.25 180.3399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15322,7 +15322,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "C16")
+					(reference "C101")
 					(unit 1)
 				)
 			)
@@ -15340,7 +15340,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e0c43fb5-8288-49fb-b0d2-8182de3682e9")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR0102"
 			(at 50.8 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -15400,7 +15400,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "#PWR055")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -15418,7 +15418,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e369863d-bba3-4aff-884c-34b02c21a0f8")
-		(property "Reference" "H6"
+		(property "Reference" "H106"
 			(at 35.56 191.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15575,7 +15575,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "H6")
+					(reference "H106")
 					(unit 1)
 				)
 			)
@@ -15594,7 +15594,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6ed8f4f-a4bf-4618-bd6e-8e945749c7af")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR0107"
 			(at 132.08 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -15655,7 +15655,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "#PWR077")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -15673,7 +15673,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7b59bf3-8745-420c-9ef4-f4fe093f3809")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR0104"
 			(at 92.71 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -15733,7 +15733,7 @@
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17"
-					(reference "#PWR070")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
