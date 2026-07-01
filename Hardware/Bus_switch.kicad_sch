@@ -1698,7 +1698,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_JLCPCB-Resistors:0402,330Ω"
+		(symbol "PCM_JLCPCB-Resistors:0402,1kΩ"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1721,7 +1721,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "330Ω"
+			(property "Value" "1kΩ"
 				(at 0 0 90)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -1742,7 +1742,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF3300TCE_C25104.pdf"
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1753,7 +1753,7 @@
 					)
 				)
 			)
-			(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 330Ω 0402 Chip Resistor - Surface Mount ROHS"
+			(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 1kΩ 0402 Chip Resistor - Surface Mount ROHS"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1764,7 +1764,7 @@
 					)
 				)
 			)
-			(property "LCSC" "C25104"
+			(property "LCSC" "C11702"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1775,7 +1775,7 @@
 					)
 				)
 			)
-			(property "Stock" "1159127"
+			(property "Stock" "13226393"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1863,7 +1863,7 @@
 					)
 				)
 			)
-			(property "Part" "0402WGF3300TCE"
+			(property "Part" "0402WGF1001TCE"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1874,7 +1874,7 @@
 					)
 				)
 			)
-			(property "Resistance" "330Ω"
+			(property "Resistance" "1kΩ"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1962,7 +1962,7 @@
 					)
 				)
 			)
-			(symbol "0402,330Ω_0_1"
+			(symbol "0402,1kΩ_0_1"
 				(rectangle
 					(start -1.016 2.54)
 					(end 1.016 -2.54)
@@ -1975,7 +1975,7 @@
 					)
 				)
 			)
-			(symbol "0402,330Ω_1_1"
+			(symbol "0402,1kΩ_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -6567,7 +6567,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Resistors:0402,330Ω")
+		(lib_id "PCM_JLCPCB-Resistors:0402,1kΩ")
 		(at 243.84 115.57 0)
 		(unit 1)
 		(body_style 1)
@@ -6577,8 +6577,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "947d9709-859f-4d86-ac8c-c9f33ac08c35")
-		(property "Reference" "R1"
+		(uuid "94d5ed80-d2b4-4ef9-9a10-7438474c336b")
+		(property "Reference" "R12"
 			(at 246.38 115.5699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6589,7 +6589,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330Ω"
+		(property "Value" "1kΩ"
 			(at 243.84 115.57 90)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6610,7 +6610,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF3300TCE_C25104.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf"
 			(at 243.84 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -6621,7 +6621,7 @@
 				)
 			)
 		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 330Ω 0402 Chip Resistor - Surface Mount ROHS"
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 1kΩ 0402 Chip Resistor - Surface Mount ROHS"
 			(at 243.84 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -6632,7 +6632,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25104"
+		(property "LCSC" "C11702"
 			(at 243.84 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -6643,7 +6643,7 @@
 				)
 			)
 		)
-		(property "Stock" "1159127"
+		(property "Stock" "13226393"
 			(at 243.84 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -6731,7 +6731,7 @@
 				)
 			)
 		)
-		(property "Part" "0402WGF3300TCE"
+		(property "Part" "0402WGF1001TCE"
 			(at 243.84 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -6742,7 +6742,7 @@
 				)
 			)
 		)
-		(property "Resistance" "330Ω"
+		(property "Resistance" "1kΩ"
 			(at 243.84 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -6819,27 +6819,16 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 243.84 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(pin "2"
+			(uuid "2bd196cf-40ba-4c24-aa30-09eabda940f6")
 		)
 		(pin "1"
-			(uuid "448429a5-2d01-4e02-9442-8a7d996ada80")
-		)
-		(pin "2"
-			(uuid "934b09a8-2917-4877-a195-70d681ba14e3")
+			(uuid "6230cb90-844c-4c46-893d-20aa36b734d9")
 		)
 		(instances
 			(project "MMS3_hat_templates"
 				(path "/6596548a-44e0-46d8-8624-fd71cf4a3e17/ec6d73af-72b0-4068-85fb-cca3c5143749"
-					(reference "R1")
+					(reference "R12")
 					(unit 1)
 				)
 			)
