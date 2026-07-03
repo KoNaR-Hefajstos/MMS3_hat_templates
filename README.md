@@ -29,6 +29,8 @@ Przed oznaczeniem projektu jako gotowy i wykonaniem ostatecznego commita, upewni
 - [ ] Usunięto z repozytorium zdjęcia z template'a.
 - [ ] Wybrano i zaktualizowano licencję projektu **Uwaga: Wstpęnie już są użyte licencje**.
 - [ ] Wygenerowano pliki produkcyjne Gerber
+- [ ] Wygenerowano HTML BOM (z plugin'u)
+- [ ] Dodano zdjęcie hat'a do readme
 - [ ] Zrobiono commit'a i push'a
 
 
