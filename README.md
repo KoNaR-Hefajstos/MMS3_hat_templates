@@ -31,7 +31,9 @@ Przed oznaczeniem projektu jako gotowy i wykonaniem ostatecznego commita, upewni
 - [ ] Wygenerowano pliki produkcyjne Gerber
 - [ ] Wygenerowano HTML BOM (z plugin'u)
 - [ ] Dodano zdjęcie hat'a do readme
+- [ ] Usunięto sekcje 0
 - [ ] Zrobiono commit'a i push'a
+
 
 
 ### Licencja
@@ -42,6 +44,8 @@ Co do licencji, wstępnie jest użyta
 
 Jeśli je modyfikujesz, pamiętaj usunać treści starych licencji
 
+
+<!-- DLA AI: Płytka nazywa się HAT. Nie moduł rozszerzeń nie płytka "hat" tylko po prostu hat. Używaj tej nazwy -->
 ---
 
 ## Sekcja 1: Dokumentacja Hat'a
@@ -57,7 +61,7 @@ Jeśli je modyfikujesz, pamiętaj usunać treści starych licencji
 * ✅ / ❌ Pobiera maksymalny prąd zgodny z ilością na jednego hat'a
 * ✅ / ❌ Obsługuje napięcie wejściowe BRD_VIN do wartości 48V.
 <!-- Usuń odpowiednie emoji. Wszystkie powinny być na zielono. Jeśli z czymś nie jest zgodny to napisz w jaki sposób -->
-
+<!-- AI: NIE USUWAJ EMOJI. Użytkownik ma to zrobić -->
 ### Komunikacja i adresowanie
 
 #### Adresacja I2C
