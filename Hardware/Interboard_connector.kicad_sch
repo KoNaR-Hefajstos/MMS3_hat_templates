@@ -1486,24 +1486,8 @@
 		(uuid "cf134a54-49c9-4a14-8910-0a07bd26df49")
 	)
 	(no_connect
-		(at 113.03 53.34)
-		(uuid "0427fdcb-8109-40d3-867c-2040404976b1")
-	)
-	(no_connect
-		(at 115.57 53.34)
-		(uuid "68d636a1-9377-4aca-b831-1da175305e8d")
-	)
-	(no_connect
 		(at 176.53 66.04)
 		(uuid "942aa047-5c48-4f89-b097-45449c7f68b3")
-	)
-	(no_connect
-		(at 191.77 53.34)
-		(uuid "b8590a22-20db-4e55-9607-810bcab54384")
-	)
-	(no_connect
-		(at 189.23 53.34)
-		(uuid "dc35df6b-0945-41e2-99a0-1db85e9e3fb1")
 	)
 	(bus_entry
 		(at 110.49 85.09)
@@ -1648,6 +1632,16 @@
 			(type default)
 		)
 		(uuid "ec0633a9-27cb-4658-900c-bb92cd88f793")
+	)
+	(wire
+		(pts
+			(xy 191.77 43.18) (xy 191.77 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10d5dd18-d6fd-4e74-bcd9-27ff4cbcc072")
 	)
 	(wire
 		(pts
@@ -1859,6 +1853,16 @@
 		)
 		(uuid "4247578d-e878-413f-8c95-08089ee97b94")
 	)
+	(wire
+		(pts
+			(xy 113.03 43.18) (xy 113.03 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49af626a-5732-4d77-9b61-ffe63d87a4d0")
+	)
 	(bus
 		(pts
 			(xy 115.57 87.63) (xy 115.57 85.09)
@@ -1871,6 +1875,16 @@
 	)
 	(wire
 		(pts
+			(xy 189.23 43.18) (xy 189.23 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "516e5435-62fe-4485-a7b1-236808bf2007")
+	)
+	(wire
+		(pts
 			(xy 82.55 66.04) (xy 82.55 67.31)
 		)
 		(stroke
@@ -1878,6 +1892,16 @@
 			(type default)
 		)
 		(uuid "534aea23-2805-4046-8042-dc3207ffdcbc")
+	)
+	(wire
+		(pts
+			(xy 115.57 43.18) (xy 115.57 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c800aba-b857-4ab3-b375-282966fa2df0")
 	)
 	(bus
 		(pts
@@ -2761,6 +2785,16 @@
 		)
 		(uuid "53daf2cb-f8a0-4e0a-bed0-7564c1878685")
 	)
+	(label "Pin_25"
+		(at 189.23 43.18 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5fd9f2cc-b330-473b-af9a-ff55532c10b3")
+	)
 	(label "Chainbus.SDA"
 		(at 102.87 67.31 270)
 		(effects
@@ -2801,6 +2835,16 @@
 		)
 		(uuid "7da5c4e7-d203-49a1-b49a-33cd915f5e1e")
 	)
+	(label "Pin_25"
+		(at 113.03 43.18 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8329af7d-87e0-48d6-b22f-86642bf7e75b")
+	)
 	(label "SEL6"
 		(at 95.25 76.2 270)
 		(effects
@@ -2820,6 +2864,16 @@
 			(justify right bottom)
 		)
 		(uuid "857e5f0c-1ac0-41a8-83c2-6f3e97e9bbcf")
+	)
+	(label "Pin_27"
+		(at 115.57 43.18 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9175c77d-a6bf-401a-9dbe-5ca895361087")
 	)
 	(label "Chainbus.RX"
 		(at 196.85 67.31 270)
@@ -2960,6 +3014,16 @@
 			(justify right bottom)
 		)
 		(uuid "e2c33ee8-d7f8-40bb-8c94-efd3c9d91048")
+	)
+	(label "Pin_27"
+		(at 191.77 43.18 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e3e06c48-da87-4c57-9680-b7f2ee9a3462")
 	)
 	(label "SEL5"
 		(at 166.37 76.2 270)
