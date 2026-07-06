@@ -162,4 +162,4 @@ Złącze ChainBus dostarcza następujące linie zasilania:
 
 [Template](https://github.com/KoNaR-Hefajstos/MMS3_hat_templates/) jest na licencji CC0 1.0 Universal. **Reszta projektu nie jest na tej licencji**
 ### Tagi projektu
-#chainbus #MMS3 #ModuCard
+#chainbus #MMS3 #ModuCard #MMS3_Musimy_ustandaryzować_Hashtagi_TBD
