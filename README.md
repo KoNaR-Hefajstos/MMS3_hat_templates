@@ -14,7 +14,7 @@ Szybka lista punkcików to wyklepania zanim hat magicznie się zrobi
 2. **Zasady projektowania:**
    * Dokładniejsza dokumentacja znajduje się w Sekcji 2.
    * Do komunikacji możesz używać **wyłącznie** interfejsów: **I2C, SPI oraz UART**.
-   * Modyfikuj połączeń złącza chainbus, bus switch'a i EEPROM'a
+   * Nie modyfikuj połączeń złącza chainbus, bus switch'a i EEPROM'a
    * Nie modyfikuj zarysu płytki, otworów montażowych ani pozycji złączy ChainBus.
    * Możesz usunąć złącze XT60, jeśli Twój projekt go nie wymaga.
 
