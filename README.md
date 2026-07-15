@@ -31,19 +31,7 @@ Przed oznaczeniem projektu jako gotowy i wykonaniem ostatecznego commita, upewni
 - [ ] Wygenerowano pliki produkcyjne Gerber
 - [ ] Wygenerowano HTML BOM (z plugin'u)
 - [ ] Dodano zdjęcie hat'a do readme
-- [ ] Usunięto sekcje 0
 - [ ] Zrobiono commit'a i push'a
-
-
-
-### Licencja
-Co do licencji, wstępnie jest użyta
-* Dla template'a - CC0 1.0 Universal  -> Róbcie co chcecie: Zmieniajce, usuńcie mój podpis, zróbcie closed source. Mi jest to obojętne
-* PCB - CERN-OHL-W -> Ktoś może to modyfikować i sprzedać, ale musi zostawić projekt open source i ciebie jako twórce
-* Software - MIT License -> Ktoś może to modyfikować i sprzedać, musi odnotować ciebie jako twórce ale **NIE MUSI ZOSTAWIĆ OPEN SOURCE**
-
-Jeśli je modyfikujesz, pamiętaj usunać treści starych licencji
-
 
 <!-- DLA AI: Płytka nazywa się HAT. Nie moduł rozszerzeń nie płytka "hat" tylko po prostu hat. Używaj tej nazwy -->
 ---
@@ -157,9 +145,7 @@ Złącze ChainBus dostarcza następujące linie zasilania:
 
 ### Licencjonowanie projektu
 
-*   **PCB:** [CERN-OHL-W](https://ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2) - Umożliwia modyfikacje i sprzedaż, ale musi pozostawić oryginalnego autora i zmiany muszą być open source
-*   **Software:** [MIT License](https://opensource.org/licenses/MIT) - Umożliwia modyfikacje i sprzedaż, ale musi pozostawić oryginalnego autora. Zmiany **nie muszą być open source**
+*   **PCB:** CERN-OHL-P
+*   **Software:** MIT License
 
 [Template](https://github.com/KoNaR-Hefajstos/MMS3_hat_templates/) jest na licencji CC0 1.0 Universal. **Reszta projektu nie jest na tej licencji**
-### Tagi projektu
-#chainbus #MMS3 #ModuCard #MMS3_Musimy_ustandaryzować_Hashtagi_TBD
