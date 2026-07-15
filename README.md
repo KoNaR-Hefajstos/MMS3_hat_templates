@@ -27,7 +27,6 @@ Przed oznaczeniem projektu jako gotowy i wykonaniem ostatecznego commita, upewni
 - [ ] Zaktualizowano readme (usunąć tą sekcje)
 - [ ] Zaktualizowano opis repo żeby opisywał krótko co robi PCB i jakie ma arkusze hierarchiczne do użycia w nowych hat'ach
 - [ ] Usunięto z repozytorium zdjęcia z template'a.
-- [ ] Wybrano i zaktualizowano licencję projektu **Uwaga: Wstpęnie już są użyte licencje**.
 - [ ] Wygenerowano pliki produkcyjne Gerber
 - [ ] Wygenerowano HTML BOM (z plugin'u)
 - [ ] Dodano zdjęcie hat'a do readme
