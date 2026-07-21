@@ -1942,6 +1942,7 @@
 		)
 	)
 	(footprint "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad_TopOnly"
+		(locked yes)
 		(layer "F.Cu")
 		(uuid "32309d21-296f-4634-a506-78614b56fa5c")
 		(at 84 94)
@@ -2192,6 +2193,7 @@
 		(embedded_fonts no)
 	)
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical_SMD"
+		(locked yes)
 		(layer "F.Cu")
 		(uuid "40beaaa8-92e4-4822-9583-de93ad9d91e0")
 		(at 130 97 90)
@@ -2201,7 +2203,7 @@
 			(at 2.6 2.03 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "19b4e987-71b8-4473-a034-a0b23eb83980")
+			(uuid "214b2565-0f26-4c38-bafa-e5d880fca4ab")
 			(effects
 				(font
 					(size 1 1)
@@ -2212,7 +2214,7 @@
 		(property "Value" "Chainbus Out"
 			(at 0 21.82 90)
 			(layer "F.Fab")
-			(uuid "d84634f3-1286-4811-ba68-a6f4b3cf1faa")
+			(uuid "96b4fc14-5c5c-410c-be4e-fb248eb7d19e")
 			(effects
 				(font
 					(size 1 1)
@@ -2224,7 +2226,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6e72737f-b502-4363-a4c5-c929fa71f83a")
+			(uuid "0d983489-780f-478c-b8d6-bb06310601da")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2236,7 +2238,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3e12545f-7038-4f58-b963-09519d67d89a")
+			(uuid "189561c7-3b20-4de5-bf5e-85f60dbdbc85")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5620,7 +5622,7 @@
 			(at -1.1 -2.815 90)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "acd26eda-1e2d-4dd9-bb00-6641c093d820")
+			(uuid "5b4ab18c-ee4a-4f6b-90b5-9d1929190402")
 			(effects
 				(font
 					(size 1 1)
@@ -5631,7 +5633,7 @@
 		(property "Value" "Conn_01x04_Pin"
 			(at 0 10 0)
 			(layer "F.Fab")
-			(uuid "b7013973-bbe7-4c8a-a3c8-50f8b091b6f9")
+			(uuid "05ac64bf-f0ee-4a9f-84e1-831ea681857b")
 			(effects
 				(font
 					(size 1 1)
@@ -5643,7 +5645,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a2e23734-0ae1-49d8-855a-54f9a7b8e623")
+			(uuid "2fe91bc1-12ca-4020-a628-af915af56bd9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5655,7 +5657,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3b79baf2-a152-4dd1-b973-439ed1aefe12")
+			(uuid "03e30fb1-eae1-4b5f-8ba4-b5d01ec6c19b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8160,6 +8162,7 @@
 		)
 	)
 	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
+		(locked yes)
 		(layer "F.Cu")
 		(uuid "6eceb930-6cb6-4391-884a-9d923c9e9b8a")
 		(at 155 99)
@@ -9638,6 +9641,7 @@
 		(embedded_fonts no)
 	)
 	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
+		(locked yes)
 		(layer "F.Cu")
 		(uuid "9692146d-0645-4940-92b7-bd9f2d006ac5")
 		(at 176 136)
@@ -9647,7 +9651,7 @@
 			(at 0 -3.65 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "40aceb87-1aa3-41b4-910f-317c16d04058")
+			(uuid "bc884a2c-3721-4b72-b4cb-4f668644242c")
 			(effects
 				(font
 					(size 1 1)
@@ -9658,7 +9662,7 @@
 		(property "Value" "M2.5 mount"
 			(at 0 3.65 0)
 			(layer "F.Fab")
-			(uuid "b0c5025b-da46-4efd-bd80-bd4987e1e451")
+			(uuid "d9058334-b461-41a3-ab35-f77d2ed6c342")
 			(effects
 				(font
 					(size 1 1)
@@ -9670,7 +9674,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "43dd9d30-4aec-4a55-b44e-aa7288a8b8f3")
+			(uuid "9f5a3609-4f68-45f8-a0a0-f7da00d4713e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9682,7 +9686,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "606e12c1-6b35-43c0-a128-c401096c72ac")
+			(uuid "a119b4a2-9fd9-4efe-8425-106571c2c85f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10364,6 +10368,7 @@
 		)
 	)
 	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
+		(locked yes)
 		(layer "F.Cu")
 		(uuid "ad332c6e-a5b5-4f10-bf7d-3769b7a4135c")
 		(at 176 94)
@@ -11644,6 +11649,7 @@
 		)
 	)
 	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
+		(locked yes)
 		(layer "F.Cu")
 		(uuid "f4e3fd31-f6f1-46e6-90f4-32237bfd297b")
 		(at 84 136)
@@ -11653,7 +11659,7 @@
 			(at 0 -3.65 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "03262585-b13c-4dda-afdd-c64fde3fc4fc")
+			(uuid "ffe35d0e-4e76-489b-952e-fb870b18af54")
 			(effects
 				(font
 					(size 1 1)
@@ -11664,7 +11670,7 @@
 		(property "Value" "M2.5 mount"
 			(at 0 3.65 0)
 			(layer "F.Fab")
-			(uuid "770e84cc-48eb-43a9-91af-453d4f2e6012")
+			(uuid "8df27f08-f423-43af-bcba-afd02df070ef")
 			(effects
 				(font
 					(size 1 1)
@@ -11676,7 +11682,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b1fc1ef6-e8a0-412d-b6a5-853d95968979")
+			(uuid "63e3bdc8-71ce-43cc-8a19-e347c2e81c05")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11688,7 +11694,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bf8d97d3-0d5e-4fa1-a64f-da9d8d18f809")
+			(uuid "e0d648f9-a995-4d96-94b8-260b101a8202")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11868,6 +11874,7 @@
 		(embedded_fonts no)
 	)
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical_SMD"
+		(locked yes)
 		(layer "B.Cu")
 		(uuid "1acbcba3-53ba-4482-9085-ad0f6b83b812")
 		(at 130 97 -90)
@@ -15049,6 +15056,7 @@
 			(type solid)
 		)
 		(fill no)
+		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "05bd6017-511e-4def-973a-58fc7b0ca630")
 	)
