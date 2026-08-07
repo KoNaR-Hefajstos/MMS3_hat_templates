@@ -144,7 +144,7 @@
         "min_text_thickness": 0.1,
         "min_through_hole_diameter": 0.15,
         "min_track_width": 0.1,
-        "min_via_annular_width": 0.25,
+        "min_via_annular_width": 0.05,
         "min_via_diameter": 0.3,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": false
@@ -1232,7 +1232,7 @@
         "uuid": "6596548a-44e0-46d8-8624-fd71cf4a3e17"
       }
     ],
-    "used_designators": "#PWR229-231,#FLG201-203",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
