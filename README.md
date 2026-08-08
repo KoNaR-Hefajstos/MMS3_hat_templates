@@ -24,13 +24,21 @@ Przed oznaczeniem projektu jako gotowy i wykonaniem ostatecznego commita, upewni
 
 - [ ] Poprawiono nazwy, numer rewizji i dane w prawym dolnym rogu schematu i PCB.
 - [ ] Dodano podpis autora/autorów oraz aktualny numer wersji na PCB.
-- [ ] Zaktualizowano readme (usunąć tą sekcje)
 - [ ] Zaktualizowano opis repo żeby opisywał krótko co robi PCB i jakie ma arkusze hierarchiczne do użycia w nowych hat'ach
 - [ ] Usunięto z repozytorium zdjęcia z template'a.
 - [ ] Wygenerowano pliki produkcyjne Gerber
 - [ ] Wygenerowano HTML BOM (z plugin'u)
 - [ ] Dodano zdjęcie hat'a do readme
+- [ ] Dodano Topic's takie same jak template (zob zdjęcie niżej)
+- [ ] Zaktualizowano readme (usunąć tą sekcje)
 - [ ] Zrobiono commit'a i push'a
+
+#### Jak dodać Topics
+- Na stronie github twojego repo po prawo jest sekcja "**about**"
+- I tam jest taka zębatka
+- Musisz na nią kliknąć, i wpisać takie same topic'i jak ma template
+
+![Na prawo w git'ie jest taka zębatka](readme_zdjecia/topics.png)
 
 <!-- DLA AI: Płytka nazywa się HAT. Nie moduł rozszerzeń nie płytka "hat" tylko po prostu hat. Używaj tej nazwy -->
 ---
@@ -52,27 +60,27 @@ Przed oznaczeniem projektu jako gotowy i wykonaniem ostatecznego commita, upewni
 ### Komunikacja i adresowanie
 
 #### Adresacja I2C
-Poniższa tabela przedstawia adresację urządzeń na magistrali I2C. Wszystkie adresy podane są w formacie 7-bitowym.
+Poniższa tabela przedstawia adresację urządzeń na magistrali I2C.
 
-| Układ (IC)    | Funkcja                               |  Address   |
-| :------------ | :------------------------------------ | :--------: |
-| **JP3721**    | Sterownik piekarnika                  | `1010000b` |
-| **PCAL9535A** | Ekspander GPIO (Dioda LED, Krańcówki) | `0100000b` |
-| **TMP102**    | Czujnik temperatury                   | `1001000b` |
+| Układ (IC)    | Funkcja                               | Address |
+| :------------ | :------------------------------------ | :-----: |
+| **JP3721**    | Sterownik piekarnika                  | `0x32`  |
+| **PCAL9535A** | Ekspander GPIO (Dioda LED, Krańcówki) | `0x2a`  |
+| **TMP102**    | Czujnik temperatury                   | `0xc4`  |
 
 #### Magistrala SPI
-Urządzenia SPI podłączone są bezpośrednio do magistrali systemowej bez użycia dodatkowych multiplekserów.
+Urządzenia SPI i ich CS podłączone są bezpośrednio do magistrali chainbus / podłączone przez multiplexer (opisz jak).
 
-| Układ (IC)  | Funkcja                     | chainbus/multiplexer |
-| :---------- | :-------------------------- | :------------------: |
-| **TMC5160** | Sterownik silnika krokowego |      `chainbus`      |
+| Układ (IC)  | Funkcja                     | bezpośrednio/multiplexer |
+| :---------- | :-------------------------- | :----------------------: |
+| **TMC5160** | Sterownik silnika krokowego |      `bezpośrednio`      |
 
 #### Magistrala UART
-Komunikacja szeregowa UART realizowana jest w sposób bezpośredni z układem docelowym.
+Urządzenia UART podłączone są bezpośrednio do magistrali chainbus / podłączone przez multiplexer (opisz jak).
 
-| Układ (IC)   | Funkcja       | chainbus/multiplexer |
-| :----------- | :------------ | :------------------: |
-| **ESP32-C3** | Adapter WI-FI |      `chainbus`      |
+| Układ (IC)   | Funkcja       | bezpośrednio/multiplexer |
+| :----------- | :------------ | :----------------------: |
+| **ESP32-C3** | Adapter WI-FI |      `bezpośrednio`      |
 
 ### Pinout złączy
 
@@ -117,7 +125,7 @@ Magistrala ChainBus jest w pełni cyfrowa. Płyta główna nie steruje bezpośre
 `MCU` $\rightarrow$ `Expander GPIO po I2C` $\rightarrow$ `Dioda LED`
 
 Wybór aktywnego modułu realizowany jest przez układ przełącznika magistrali (bus switch) na płycie głównej. Dzięki temu linie I2C, SPI i UART są niezależne dla każdego hat'a (brak konfliktów adresów I2C między różnymi hatami).
-* **Identyfikacja:** Każdy moduł powinien posiadać pamięć EEPROM na magistrali I2C w celu identyfikacji płyty przez system - układ M24C64-W skonfigurowany na adres `1010000` przy liniach adresowych A0, A1, A2 zwartych do masy.
+* **Identyfikacja:** Każdy moduł powinien posiadać pamięć EEPROM na magistrali I2C w celu identyfikacji płyty przez system - układ M24C64-W skonfigurowany na adres `0x50` przy liniach adresowych A0, A1, A2 zwartych do masy.
 
 ### Zasilanie
 Złącze ChainBus dostarcza następujące linie zasilania:
@@ -140,9 +148,9 @@ Złącze ChainBus dostarcza następujące linie zasilania:
 
 ---
 
-## Sekcja 3: Licencja, linki i tagi
+## Sekcja 3: Licencje
 
-### Licencjonowanie projektu
+### Licencje projektu
 
 *   **PCB:** CERN-OHL-P
 *   **Software:** MIT License
