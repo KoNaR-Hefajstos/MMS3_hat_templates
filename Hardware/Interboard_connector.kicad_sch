@@ -1599,7 +1599,7 @@
 		)
 		(uuid "6c3275bf-e778-41cc-9656-8408aa9fe9bb")
 	)
-	(text "UART FLIP"
+	(text "UART FLIP STATUS"
 		(exclude_from_sim no)
 		(at 26.67 190.5 0)
 		(effects
