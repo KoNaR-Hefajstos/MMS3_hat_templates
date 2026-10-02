@@ -32,6 +32,7 @@ Przed oznaczeniem projektu jako gotowy i wykonaniem ostatecznego commita, upewni
 - [ ] Dodano Topic's takie same jak template (zob zdjęcie niżej)
 - [ ] Zaktualizowano readme (usunąć tą sekcje)
 - [ ] Zrobiono commit'a i push'a
+- [ ] Wrzucono pliki do release na githubie z tytułem "Version 1.0" albo w tym stylu
 
 #### Jak dodać Topics
 - Na stronie github twojego repo po prawo jest sekcja "**about**"
