@@ -35,7 +35,28 @@ fp-info-cache
 **/*-backups/*.zip
 
 # Local git-based history (KiCad 9.0+)
-.history
+.history*
+_restore_backup_*/
+
+# Symbol rescue backups
+rescue-backup/
+
+# Exported 3D models of the board (library models in lib/*.3dshapes stay tracked)
+/*.step
+/Hardware/*.step
+
+# Fabrication outputs (JLCPCB plugin, Interactive HTML BOM)
+**/jlcpcb/
+**/bom/
 
 # Local project settings
 *.kicad_prl
+.directory
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
