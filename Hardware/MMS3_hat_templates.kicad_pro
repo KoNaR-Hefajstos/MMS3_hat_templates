@@ -178,6 +178,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -189,6 +190,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -200,6 +202,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -492,6 +495,7 @@
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -674,30 +678,15 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
+    "net_colors": {},
     "netclass_assignments": {
       "/Power Connector/VIN_BRD": [
         "50V",
         "PWR"
       ],
-      "BRD_VIN": [
-        "50V "
-      ],
-      "Net-(D4-K)": [
-        "50V "
-      ],
-      "Net-(J8-Pin_1)": [
-        "50V "
-      ],
-      "U_reg": [
-        "50V "
-      ],
       "VIN_CHAINBUS": [
         "50V",
         "PWR"
-      ],
-      "Vin": [
-        "50V "
       ]
     },
     "netclass_patterns": [
@@ -1249,7 +1238,7 @@
         "uuid": "6596548a-44e0-46d8-8624-fd71cf4a3e17"
       }
     ],
-    "used_designators": "J301,J601-602,C301,D101,D301,D401,D601,#PWR109-110,#PWR301-317,#PWR401-402,#PWR601-602,#PWR701-703,#FLG401-402,#FLG601-602,CN101,CN401,CN601,U102,U301-302,U401-402,U601-602,R101-102,R301-313,R401-402,R601-602",
+    "used_designators": "#FLG401-402,#FLG601-602,#PWR109-110,#PWR301-317,#PWR401-403,#PWR601-602,#PWR701-703,C301,CN101,CN401,CN601,D101,D301,D401-402,D601,J301,J601-602,R101-102,R301-313,R401-402,R601-602,U102,U301-302,U401-402,U601-602",
     "variants": []
   },
   "sheets": [
