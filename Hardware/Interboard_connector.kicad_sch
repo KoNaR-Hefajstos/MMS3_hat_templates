@@ -5325,6 +5325,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C41380407"
+			(at 140.97 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "89a6606c-43ce-448a-813e-a0019a694227")
 		)
@@ -5835,6 +5846,17 @@
 			)
 		)
 		(property "polarity" ""
+			(at 64.77 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C6332241"
 			(at 64.77 64.77 90)
 			(hide yes)
 			(show_name no)
