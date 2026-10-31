@@ -16650,21 +16650,9 @@
 		(layer "B.SilkS")
 		(uuid "7b0036cd-f12f-405b-838d-0f1a01c8b4be")
 	)
-	(gr_rect
-		(start 80 133)
-		(end 87 140)
-		(stroke
-			(width 0.3)
-			(type solid)
-		)
-		(fill no)
-		(locked yes)
-		(layer "Eco1.User")
-		(uuid "2dfa928c-b48a-4515-b034-a4a6b29b9696")
-	)
 	(gr_line
 		(start 80.1 90)
-		(end 80.1 98)
+		(end 80.1 140)
 		(stroke
 			(width 0.3)
 			(type solid)
@@ -16672,17 +16660,6 @@
 		(locked yes)
 		(layer "Eco1.User")
 		(uuid "6a85725e-dd6c-4006-9622-baf7667a15d1")
-	)
-	(gr_line
-		(start 80.1 98)
-		(end 83.1 98)
-		(stroke
-			(width 0.3)
-			(type solid)
-		)
-		(locked yes)
-		(layer "Eco1.User")
-		(uuid "060dc43a-f8b1-45e6-bc3e-62ff3349881c")
 	)
 	(gr_line
 		(start 83.1 98)
@@ -16694,6 +16671,50 @@
 		(locked yes)
 		(layer "Eco1.User")
 		(uuid "a9266b6d-b607-4aa2-bb3d-97c0c764c7e9")
+	)
+	(gr_line
+		(start 83.1 133)
+		(end 83.1 98)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(locked yes)
+		(layer "Eco1.User")
+		(uuid "060dc43a-f8b1-45e6-bc3e-62ff3349881c")
+	)
+	(gr_line
+		(start 83.1 133)
+		(end 87 133)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(locked yes)
+		(layer "Eco1.User")
+		(uuid "3d4f041b-d00a-46ed-84dd-7e07d77d5a20")
+	)
+	(gr_line
+		(start 87 133)
+		(end 87 140)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(locked yes)
+		(layer "Eco1.User")
+		(uuid "7aaf1560-8ace-43c5-b670-56cf15358e80")
+	)
+	(gr_line
+		(start 87 140)
+		(end 80.1 140)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(locked yes)
+		(layer "Eco1.User")
+		(uuid "1f1dd619-28cd-42e1-921d-2222f050c4fd")
 	)
 	(gr_line
 		(start 88.1 93)
